@@ -1,0 +1,13 @@
+Request Id: d78da5b8-cb30-4872-825d-31b689503000
+Correlation Id: c6613d20-10e2-4bba-b54d-a29a89cb9137
+Timestamp: 2024-06-04T19:44:40Z
+Message: AADSTS650057: Invalid resource. The client has requested access to a resource which is not listed in the requested permissions in the client's application registration. Client app ID: 2a3c101a-b1fb-4729-9c1a-7521c9db5bea(CrossChexCloud). Resource value from request: https://yoursharepointsite.sharepoint.com. Resource app ID: 00000003-0000-0ff1-ce00-000000000000. List of valid resources from app registration: 00000003-0000-0000-c000-000000000000, f360d557-2935-49f7-ab34-2955a31c923d, eb3f6f2c-e285-4252-af13-a0e55a70d363.
+
+
+
+Where are we relative to the sun.
+As we circle the sun and spin on the access, where are we relative to the sun?
+
+Isn't that the shape to our DNA? Polarized, would that look like a wave and a particle?
+
+What effect does the atmosphere have on the transmission of photons?
