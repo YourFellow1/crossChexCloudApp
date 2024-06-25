@@ -11,6 +11,29 @@ import os
 import math
 import signal
 import time
+import logging
+from logging.handlers import RotatingFileHandler
+
+# Configure the basic logging.
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s'
+)
+# Set up logging.
+handler = RotatingFileHandler('crossChexLog.log', maxBytes=10*1024*1024, backupCount=5) #Rotate every 10 Mb, and keep up to 5.
+handler.setLevel(logging.INFO)
+
+# Configure logging format
+formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+handler.setFormatter(formatter)
+
+# Add the handler to the root logger
+logging.getLogger().addHandler(handler)
+
+logging.info('Starting Application') # This one isn't running.
+logging.warning('example of a warning message')
+logging.error('This is what an error looks like!')
+
 
 # Running logic
 running = True
@@ -18,6 +41,7 @@ running = True
 def signal_handler(sig, frame):
     global running
     print("Signal received, exiting gracefully...")
+    logging.info('Selected to close via ctrl + c')
     running = False
 
 # Set up the signal handler for SIGINT (Ctrl+C)
@@ -51,6 +75,7 @@ def main():
             
             # first_report.site won't be used until we're sifting through data already pulled.
             # Run a report now?
+            logging.info('Pulling the first API request')
             csv_list = first_token.get_full_list_by_start_stop(first_token.begin_time, first_token.end_time)
             # (CSV_LIST [LName, FName, Workno, DeviceName, date of punch, time of punch])
         
