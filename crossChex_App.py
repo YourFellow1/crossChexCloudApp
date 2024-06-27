@@ -14,13 +14,17 @@ import time
 import logging
 from logging.handlers import RotatingFileHandler
 
+#------------ LOGGER SETUP -----------
 # Configure the basic logging.
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
 # Set up logging.
-handler = RotatingFileHandler('crossChexLog.log', maxBytes=10*1024*1024, backupCount=5) #Rotate every 10 Mb, and keep up to 5.
+filePath = os.getcwd()
+print(filePath)
+filePath = os.path.join(filePath, 'crossChexLog.log')
+handler = RotatingFileHandler(filePath, maxBytes=10*1024*1024, backupCount=5) #Rotate every 10 Mb, and keep up to 5.
 handler.setLevel(logging.INFO)
 
 # Configure logging format
@@ -30,9 +34,15 @@ handler.setFormatter(formatter)
 # Add the handler to the root logger
 logging.getLogger().addHandler(handler)
 
-logging.info('Starting Application') # This one isn't running.
-logging.warning('example of a warning message')
-logging.error('This is what an error looks like!')
+
+# # Example log messages
+# logger.debug('This is a debug message')
+# logger.info('This is an info message')
+# logger.warning('This is a warning message')
+# logger.error('This is an error message')
+# logger.critical('This is a critical message')
+
+#--------------- End LOGGER setup -----------
 
 
 # Running logic
@@ -49,8 +59,11 @@ signal.signal(signal.SIGINT, signal_handler)
 
 # Ensure the CSV directory exists.
 def ensure_directory_exists(directory):
+    print(f"os.path: {os.path}")
+    
     if not os.path.exists(directory):
         os.makedirs(directory)
+    print("directory: " + directory)
 
 
 def main():
@@ -60,7 +73,7 @@ def main():
         ensure_directory_exists(csv_directory) # def located above.
 
         while running:
-
+            logging.info("we're in the initial loop")
 
             # get the report info started.
             first_report = report() #Report class
@@ -93,7 +106,7 @@ def main():
             idList = []
             # first_report.site is the site number
 
-            # TODO: Move this to a function in scratch?
+            # TODO: Move this to a function in scratch?.. OR change scratch to a filter class.
             for list in sorted_list:
                 
                 # If All was selected, then the device name is irrelevant. (site = 1)

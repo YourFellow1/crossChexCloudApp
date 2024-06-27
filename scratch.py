@@ -42,7 +42,7 @@ def time_difference(time1, time2):
 
 # This will run for all sites, or one site. Depends on list passed in.
 # MUST be sorted list to work right. [person name, workno, device, date, time]
-def assign_in_out(list): 
+def assign_in_out(list):
     inOut = []
     remember = ['', '', '','','','']
     for sub_list in list:

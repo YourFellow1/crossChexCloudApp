@@ -84,10 +84,18 @@ device_names = {
 
 #-------------End Device Config
 
-
+#---------------- INPUTS
 select_date = "Please enter date (format = YYYY-MM-DD): "
 
 select_start_date = "Please enter start date (format = YYYY-MM-DD): "
 select_end_date = "Please enter end date (format = YYYY-MM-DD): "
 
 select_month = "Please enter the month (format = MM)"
+
+loop_program_message = '''*****************************************
+Thank you for choosing SMApp for all (most) of your ABI needs.
+We understand you have many options in resources for reporting on Contractor Hours.
+Press Ctrl + C to quit the program, or press the Enter Key to loop back around to the
+main menu.
+******************************************************
+'''

@@ -9,6 +9,8 @@ import os
 import csv
 
 
+## Let's expand this to use the find_file? Then we can start printing to a computer again.
+# This makes me feel like I need to start all over again...
 
 class CSV_EXPORT:
     
