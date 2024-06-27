@@ -9,6 +9,7 @@ import os
 import logging
 from logging.handlers import RotatingFileHandler
 import signal
+import messages
 
 #Set main path and directory
 # C:\Users\jfellow\OneDrive - Bastian Solutions\TestCode\Python\crossChex_App\main.py
@@ -80,4 +81,20 @@ def main():
         while running:
             mainLoopCounter += 1
             logging.info(f"Entering loop # {mainLoopCounter}")
-
+            
+            
+            
+            
+    
+    except Exception as e:
+        logging.critical(f"Program closed when it wasn't supposed to. Error: {e}")
+        print(f"critical error: Program closed when it wasn't supposed to. Error: {e}")
+        
+        ### Use an input to manually close the program after failure.
+        input("Press Enter to Exit... (disgracefully)")
+        
+    else:
+        logging.info("Successful completion of the program. Looping back around")
+        
+        ### Use an input ot manually close go back to the front of the loop.
+        input(messages.loop_program_message)
