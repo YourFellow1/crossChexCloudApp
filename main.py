@@ -10,34 +10,39 @@ import logging
 from logging.handlers import RotatingFileHandler
 import signal
 import messages
-
-#Set main path and directory
-# C:\Users\jfellow\OneDrive - Bastian Solutions\TestCode\Python\crossChex_App\main.py
-current_file_path = os.path.abspath(__file__)
-# C:\Users\jfellow\OneDrive - Bastian Solutions\TestCode\Python\crossChex_App
-current_file_directory = os.path.dirname(current_file_path) 
-logFilePath = os.path.join(current_file_directory, 'crossChexLog.log')
+import util
+import globals
+from logger_config import logger as logging
 
 
-#--------- LOGGER SETUP -------------------------
-# Config
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s'
-)
 
-# Rotating = 10MB files, keeps the last 5. 
-handler = RotatingFileHandler(logFilePath, maxBytes=10*1024*1024, backupCount=5)
-handler.setLevel(logging.INFO)
 
-# Configure logging format
-formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
-handler.setFormatter(formatter)
 
-# Add handler to the root logger
-logging.getLogger().addHandler(handler)
 
-#------------- END LOGGER SETUP. -----------------------
+
+# #--------- LOGGER SETUP -------------------------
+# # Config
+# logging.basicConfig(
+#     level=logging.INFO,
+#     format='%(asctime)s - %(levelname)s - %(message)s'
+# )
+
+# # Rotating = 10MB files, keeps the last 5. 
+# handler = RotatingFileHandler(globals.logFilePath, maxBytes=10*1024*1024, backupCount=5)
+# handler.setLevel(logging.INFO)
+
+# # Configure logging format
+# formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+# handler.setFormatter(formatter)
+
+# # Add handler to the root logger
+# logging.getLogger().addHandler(handler)
+
+# # Logging in.
+# logging.info("User opened the program, and logging has initiated - Currently in testing mode.")
+
+# #------------- END LOGGER SETUP. -----------------------
+
 
 # Running logic
 running = True
@@ -51,41 +56,47 @@ def signal_handler(sig, frame):
 # Signal handler - for Ctrl+c to give a specific response.
 signal.signal(signal.SIGINT, signal_handler)
 
-# Set up find file.
-def find_file(root_folder, file_name):
-    for dirpath, dirnames, filenames in os.walk(root_folder):
-        if file_name in filenames:
-            return os.path.join(dirpath, file_name)
-    return None
-
-# Function to ensure csv file directory exists, make it if not.
-### including logging for my benefit.
-def ensure_directory_exists(directory):
-    if not os.path.exists(directory):
-        os.makedirs(directory)
-        logging.warning(f"file/directory: '{directory}' was not found, so it was created nearby!")
-    else:
-        logging.info(f"file/directory: '{directory}' was found, moving on.")
-
 # Loop counter for main loop.
-mainLoopCounter = 0        
+## Not necessary, but something I will track during debugging.
+
+mainLoopCounter = 0
+emergency = False    
+
+
 
 def main():
-
+    global mainLoopCounter
+    global emergency
     # Overall try/catch
     try:
         # Make sure the directory for the CSV files exists.
         csv_directory = 'historical csv files'
-        ensure_directory_exists(csv_directory)
+        util.ensure_directory_exists(csv_directory)
         
         while running:
             mainLoopCounter += 1
             logging.info(f"Entering loop # {mainLoopCounter}")
             
             
+            # Welcome message 
+            util.welcome_menu()
+            
+            # Get site.
+            site = util.get_num_selection(messages.report_site, 0, messages.num_of_sites + 2, "Site num")
             
             
-    
+            # Check for an emergency situation.
+            emergency = util.get_emergency()
+            
+            
+            
+            if emergency:
+                #TODO: Pull today's list onsite
+                #TODO: pull today's CURRENT badged-in list.
+                pass #TODO: Exit the program.
+            
+            
+            
     except Exception as e:
         logging.critical(f"Program closed when it wasn't supposed to. Error: {e}")
         print(f"critical error: Program closed when it wasn't supposed to. Error: {e}")
@@ -98,3 +109,10 @@ def main():
         
         ### Use an input ot manually close go back to the front of the loop.
         input(messages.loop_program_message)
+
+
+if __name__ == "__main__":
+    main()
+else:
+    print("program has exited")
+    logging.info("Program has exited\n\n\n^^^^^^^^\n\n\n")

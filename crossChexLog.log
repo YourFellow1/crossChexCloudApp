@@ -1,0 +1,65 @@
+2024-06-27 17:59:08,187 - WARNING - file/directory: 'historical csv files' was not found, so it was created nearby!
+2024-06-27 17:59:13,390 - CRITICAL - Program closed when it wasn't supposed to. Error: local variable 'mainLoopCounter' referenced before assignment
+2024-06-27 17:59:37,574 - INFO - Program has exited
+2024-06-27 18:01:35,463 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-06-27 18:02:28,031 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-06-27 18:02:56,912 - CRITICAL - Program closed when it wasn't supposed to. Error: local variable 'mainLoopCounter' referenced before assignment
+2024-06-27 18:04:37,277 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-06-27 18:04:38,672 - CRITICAL - Program closed when it wasn't supposed to. Error: local variable 'mainLoopCounter' referenced before assignment
+2024-06-27 18:05:54,382 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-06-27 18:05:57,065 - INFO - Entering loop # 1
+2024-06-27 18:06:33,851 - INFO - User selected 
+2024-06-27 18:06:54,755 - INFO - Entering loop # 2
+2024-06-27 18:07:20,482 - WARNING - User selected emergency situation. Processing only a list for today
+2024-06-28 09:23:51,391 - INFO - User opened the program, and logging has initiated - Currently in testing mode.
+2024-06-28 09:23:51,395 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-06-28 09:23:51,395 - INFO - Entering loop # 1
+2024-06-28 09:24:42,478 - INFO - User opened the program, and logging has initiated - Currently in testing mode.
+2024-06-28 09:24:42,482 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-06-28 09:24:42,482 - INFO - Entering loop # 1
+2024-06-28 09:24:50,005 - WARNING - User selected 'y' (emergency situation). Processing only a list for today
+2024-06-28 09:25:40,253 - INFO - User opened the program, and logging has initiated - Currently in testing mode.
+2024-06-28 09:25:40,256 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-06-28 09:25:40,257 - INFO - Entering loop # 1
+2024-06-28 09:25:43,879 - INFO - User selected 'n', and was directed to the main menu
+2024-06-28 10:25:28,461 - INFO - User opened the program, and logging has initiated - Currently in testing mode.
+2024-06-28 10:25:28,467 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-06-28 10:25:28,467 - INFO - Entering loop # 1
+2024-06-28 10:25:42,833 - WARNING - User selected 'y' (emergency situation). Processing only a list for today
+file/directory: 'historical csv files' was found, moving on.
+Entering loop # 1
+User selected 'y' (emergency situation). Processing only a list for today
+Entering loop # 2
+User selected 'n', and was directed to the main menu
+Entering loop # 3
+2024-06-28 13:33:57,663 - INFO - User opened the program, and logging has initiated - Currently in testing mode.
+2024-06-28 13:33:57,667 - INFO - Program has exited
+
+
+^^^^^^^^
+
+
+
+2024-06-28 13:33:57,668 - INFO - User opened the program, and logging has initiated - Currently in testing mode.
+2024-06-28 13:33:57,668 - INFO - User opened the program, and logging has initiated - Currently in testing mode.
+2024-06-28 13:33:57,669 - INFO - User opened the program, and logging has initiated - Currently in testing mode.
+2024-06-28 13:33:57,669 - INFO - User opened the program, and logging has initiated - Currently in testing mode.
+2024-06-28 13:33:57,669 - INFO - User opened the program, and logging has initiated - Currently in testing mode.
+2024-06-28 13:33:57,671 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-06-28 13:33:57,671 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-06-28 13:33:57,671 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-06-28 13:33:57,672 - INFO - Entering loop # 1
+2024-06-28 13:33:57,672 - INFO - Entering loop # 1
+2024-06-28 13:33:57,672 - INFO - Entering loop # 1
+2024-06-28 13:34:55,950 - WARNING - User selected 'y' (emergency situation). Processing only a list for today
+2024-06-28 13:34:55,950 - WARNING - User selected 'y' (emergency situation). Processing only a list for today
+2024-06-28 13:34:55,950 - WARNING - User selected 'y' (emergency situation). Processing only a list for today
+2024-06-28 13:34:55,952 - INFO - Entering loop # 2
+2024-06-28 13:34:55,952 - INFO - Entering loop # 2
+2024-06-28 13:34:55,952 - INFO - Entering loop # 2
+2024-06-28 13:35:11,264 - INFO - Selected to close via ctrl + c
+2024-06-28 13:35:11,264 - INFO - Selected to close via ctrl + c
+2024-06-28 13:35:11,264 - INFO - Selected to close via ctrl + c
+2024-06-28 13:35:11,265 - CRITICAL - Program closed when it wasn't supposed to. Error: 
+2024-06-28 13:35:11,265 - CRITICAL - Program closed when it wasn't supposed to. Error: 
+2024-06-28 13:35:11,265 - CRITICAL - Program closed when it wasn't supposed to. Error: 

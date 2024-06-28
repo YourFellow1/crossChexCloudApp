@@ -1,0 +1,13 @@
+2024-06-28 13:58:19,993 - INFO - Program has exited
+
+
+^^^^^^^^
+
+
+
+2024-06-28 13:58:19,997 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-06-28 13:58:19,997 - INFO - Entering loop # 1
+2024-06-28 13:58:42,504 - WARNING - User selected 'y' (emergency situation). Processing only a list for today
+2024-06-28 13:58:42,504 - INFO - Entering loop # 2
+2024-06-28 13:58:46,321 - INFO - Selected to close via ctrl + c
+2024-06-28 13:58:46,322 - CRITICAL - Program closed when it wasn't supposed to. Error: 

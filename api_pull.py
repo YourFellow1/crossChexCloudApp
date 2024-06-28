@@ -39,6 +39,7 @@ def get_API_KEY():
     
     #Create dict for the key to be stored as a string.
     API_KEY = []
+    
 
     # Get the API_KEY file.
     target_filename = "API_KEY.csv"

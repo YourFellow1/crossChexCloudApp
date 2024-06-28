@@ -60,12 +60,11 @@ site_names = {
     5: "Partstown",
     6: "Sanmar",
     7: "Dollar General",
-    8: "Frito Whitestown",
-    9: "TMH",
-    10: "Site Not Listed"
+    8: "TMH",
+    9: "Site Not Listed"
 }
 
-num_of_sites = 10 # The number of options in "Report_site
+num_of_sites = 7 # The number of sites listed (NOT #1 or "Site not listed.")
 
 #---------------------------End Site Config
 
@@ -99,3 +98,14 @@ Press Ctrl + C to quit the program, or press the Enter Key to loop back around t
 main menu.
 ******************************************************
 '''
+
+welcome_screen = '''SMAPP-SMAPP-SMAPP-SMAPP-SMAPP-SMAPP
+Welcome to SMApp, ABI reporting edition
+Please press enter to continue on to the main menu.
+Por espanol, marko two-o.
+SMAPP-SMAPP-SMAPP-SMAPP-SMAPP-SMAPP
+'''
+
+open_emergency = '''!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Is this an emergency situation where you need a direct list of who's badged-in?
+(y/n):'''

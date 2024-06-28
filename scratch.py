@@ -28,7 +28,7 @@ def site_device_to_num(device):
     return dict[device]
 
 # Pass in the num to get the device?
-# Technically returns a tuple if there's more than one device/site
+# Technically returns a tuple if there's more than1 one device/site
 def site_num_to_device(num):
     dict = messages.device_names
     keys = [key for key, value in dict.items() if value == num]
