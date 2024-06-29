@@ -4,42 +4,14 @@
 import time
 from exception import NotInRange
 import logging
-import main
+import globals
 from logging.handlers import RotatingFileHandler
 import os
-import messages
+from messages import open_emergency, welcome_screen
 from logger_config import logger as logging
+import configparser
 
 
-# #--------- LOGGER SETUP -------------------------
-# # Config
-# logging.basicConfig(
-#     level=logging.INFO,
-#     format='%(asctime)s - %(levelname)s - %(message)s'
-# )
-
-# #--------- LOGGER SETUP -------------------------
-# # Config
-# logging.basicConfig(
-#     level=logging.INFO,
-#     format='%(asctime)s - %(levelname)s - %(message)s'
-# )
-
-# # Rotating = 10MB files, keeps the last 5. 
-# handler = RotatingFileHandler(main.logFilePath, maxBytes=10*1024*1024, backupCount=5)
-# handler.setLevel(logging.INFO)
-
-# # Configure logging format
-# formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
-# handler.setFormatter(formatter)
-
-# # Add handler to the root logger
-# logging.getLogger().addHandler(handler)
-
-# # Logging in.
-# logging.info("User opened the program, and logging has initiated - Currently in testing mode.")
-
-# #------------- END LOGGER SETUP. -----------------------
 
 #------------- DEFs from MAIN start --------------------------
 
@@ -61,7 +33,7 @@ def ensure_directory_exists(directory):
 # Is this an emergency situation?
 def get_emergency():
     while True:
-        emergencyMessage = input(messages.open_emergency).lower()
+        emergencyMessage = input(open_emergency).lower()
             
         if emergencyMessage == 'y':
             print("Confirmed, emergency. Calculating now...")
@@ -78,7 +50,7 @@ def get_emergency():
 
 # Welcome Screen
 def welcome_menu():
-    input(messages.welcome_screen)
+    input(welcome_screen)
     pass
 
 # Need to get site from input. Return number.
@@ -104,5 +76,59 @@ def get_num_selection(message, botRange, topRange, number_purpose):
 
 #------------- DEFs from MAIN end --------------------------
 
-# Used to validate int input of a dict/list.
-### Pass in the use case? for exception/logging reasons?
+#-------------- Config read start -----------------
+
+def read_config():
+    # Create a configparser object
+    config = configparser.ConfigParser()
+    
+    # read the configuration file
+    # Working directory only points to test code. so use ABS path.
+    # ^^ also important for distribution of the app.
+    try:
+        # Find file has the built-in "joins" function.
+        config_path = find_file(globals.current_file_directory, 'SMApp_config.ini')
+        if not config_path:
+            logging.error("Configuration file not found")
+            return None
+        
+        # Read
+        logging.debug(f"Reading configuration file from {config_path}")
+        config.read(config_path)
+        
+        config_values = {}
+        
+        # Dynamically read through all the sections and options.
+        for section in config.sections():
+            config_values[section] = {}
+            for option in config.options(section):
+                config_values[section][option] = config.get(section, option)
+                
+        return config_values
+    
+    except Exception as e:
+        logging.error(f"An error occurred when trying to read the config file: {e}")
+
+def use_config_read():
+    config_data = read_config()
+    print(config_data['API'])
+
+
+#-------------- Config read end -----------------
+
+# Create the input for site list.
+
+
+
+
+##### Below was a test.. and it took me the better part of an hour to figure it out.
+### please have this saved as an example to learn from!!!
+config_data = read_config()
+
+print(config_data)
+print(f"hardcode for tjx Marshalls: {config_data['Sites']['2']}")
+
+for option, section in config_data.items():
+    for item, value in section.items():
+        print(f"({option}) -> ({item}) -> value: {value}")
+        

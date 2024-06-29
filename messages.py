@@ -1,5 +1,6 @@
 # Messages to not take up space?
 
+
 #### Use this to configure different options. Report_length is const.
 ### Sites need updated.
 ## make sure site_names matches above.
@@ -38,19 +39,13 @@ Select the month:
 #------------------- End of locked in messages --------
 
 #-------------------------------------- Site Config -----
-report_site = '''*************************************
-Select your site:
-1. All
-2. TJX-Marshalls
-3. Kiss
-4. GMDR2
-5. Partstown
-6. Sanmar
-7. Dollar General
-8. Frito Whitestown
-9. THM
-10. Name not listed - Show all...
-*************************************\n'''
+
+#TODO: Create the site names from the config file.
+# Site names derived from getting and reading the config file.
+
+
+
+
 
 site_names = {
     1: "All",
@@ -109,3 +104,16 @@ SMAPP-SMAPP-SMAPP-SMAPP-SMAPP-SMAPP
 open_emergency = '''!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 Is this an emergency situation where you need a direct list of who's badged-in?
 (y/n):'''
+
+report_site = '''*************************************
+Select your site:
+1. All
+2. TJX-Marshalls
+3. Kiss
+4. GMDR2
+5. Partstown
+6. Sanmar
+7. Dollar General
+8. Frito Whitestown
+9. THM
+10. Name not listed - Show all...\n'''

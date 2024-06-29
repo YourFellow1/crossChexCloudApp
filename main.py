@@ -11,37 +11,9 @@ from logging.handlers import RotatingFileHandler
 import signal
 import messages
 import util
-import globals
+
 from logger_config import logger as logging
 
-
-
-
-
-
-
-# #--------- LOGGER SETUP -------------------------
-# # Config
-# logging.basicConfig(
-#     level=logging.INFO,
-#     format='%(asctime)s - %(levelname)s - %(message)s'
-# )
-
-# # Rotating = 10MB files, keeps the last 5. 
-# handler = RotatingFileHandler(globals.logFilePath, maxBytes=10*1024*1024, backupCount=5)
-# handler.setLevel(logging.INFO)
-
-# # Configure logging format
-# formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
-# handler.setFormatter(formatter)
-
-# # Add handler to the root logger
-# logging.getLogger().addHandler(handler)
-
-# # Logging in.
-# logging.info("User opened the program, and logging has initiated - Currently in testing mode.")
-
-# #------------- END LOGGER SETUP. -----------------------
 
 
 # Running logic
