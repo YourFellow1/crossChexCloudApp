@@ -123,3 +123,32 @@
 
 
 
+2024-06-29 10:45:14,355 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-06-29 10:45:14,356 - INFO - Entering loop # 1
+2024-06-29 10:45:18,482 - CRITICAL - Program closed when it wasn't supposed to. Error: 'str' object is not callable
+2024-06-29 10:47:58,801 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-06-29 10:47:58,802 - INFO - Entering loop # 1
+2024-06-29 10:49:03,350 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-06-29 10:49:03,350 - INFO - Entering loop # 1
+2024-06-29 10:49:09,028 - CRITICAL - Program closed when it wasn't supposed to. Error: 'str' object is not callable
+2024-06-29 10:49:22,112 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-06-29 10:49:22,113 - INFO - Entering loop # 1
+2024-06-29 10:49:36,987 - CRITICAL - Program closed when it wasn't supposed to. Error: 'str' object is not callable
+2024-06-29 10:50:21,148 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-06-29 10:50:21,149 - INFO - Entering loop # 1
+2024-06-29 10:54:10,486 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-06-29 10:54:10,487 - INFO - Entering loop # 1
+2024-06-29 11:11:24,794 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-06-29 11:11:24,794 - INFO - Entering loop # 1
+2024-06-29 11:12:49,397 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-06-29 11:12:49,398 - INFO - Entering loop # 1
+2024-06-29 11:18:35,514 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-06-29 11:18:35,514 - INFO - Entering loop # 1
+2024-06-29 11:19:18,973 - WARNING - User selected 'y' (emergency situation). Processing only a list for today
+2024-06-29 11:19:18,974 - INFO - Entering loop # 2
+2024-06-29 11:25:34,101 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-06-29 11:25:34,102 - INFO - Entering loop # 1
+2024-06-29 11:26:08,261 - INFO - User selected 'n', and was directed to the main menu
+2024-06-29 11:26:08,261 - INFO - Entering loop # 2
+2024-06-29 11:26:30,120 - WARNING - User selected 'y' (emergency situation). Processing only a list for today
+2024-06-29 11:26:30,121 - INFO - Entering loop # 3

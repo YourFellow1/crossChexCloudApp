@@ -33,12 +33,13 @@ signal.signal(signal.SIGINT, signal_handler)
 
 mainLoopCounter = 0
 emergency = False    
-
+site_config = util.read_config()
 
 
 def main():
     global mainLoopCounter
     global emergency
+    global site_config
     # Overall try/catch
     try:
         # Make sure the directory for the CSV files exists.
@@ -53,20 +54,39 @@ def main():
             # Welcome message 
             util.welcome_menu()
             
-            # Get site.
-            site = util.get_num_selection(messages.report_site, 0, messages.num_of_sites + 2, "Site num")
+# ---------- Get Site ------------------#
+            ## site_config was initialized up top.
+            # Call site_message
+            site_message = util.site_message(site_config)
             
+            # Get user input for site selection number
+            site = util.get_num_selection(site_message, 1, len(site_config['Sites']), 'because')
+            logging.info(f"selected site: {site}")
             
             # Check for an emergency situation.
             emergency = util.get_emergency()
-            
-            
-            
+                        
             if emergency:
                 #TODO: Pull today's list onsite
-                #TODO: pull today's CURRENT badged-in list.
-                pass #TODO: Exit the program.
-            
+                    # Run API pull to get token
+                    # Run API pull w/token.
+                    # Make list a dictionary.
+                    # Filter list by devices
+                    # Export a list of poeple (all badge-ins)
+                    # export the list of who's clocked in.
+                pass
+                #TODO: Exit the program.
+                # Else:
+                    # Check for historical data to work with.
+                    # Only pull an API if it's incomplete.
+                    # Complete the historical 
+                    # Set up the request
+                        # Considerations:
+                            # Hours
+                            # groups
+                            # site(s)
+                            
+                    
             
             
     except Exception as e:

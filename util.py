@@ -73,6 +73,9 @@ def get_num_selection(message, botRange, topRange, number_purpose):
         except NotInRange:
             print("Number must be in the range of the prompt")
 
+def get_site_devices(num, config_data):
+    #TODO: need to create a list of devices.
+    pass
 
 #------------- DEFs from MAIN end --------------------------
 
