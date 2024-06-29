@@ -109,26 +109,49 @@ def read_config():
     except Exception as e:
         logging.error(f"An error occurred when trying to read the config file: {e}")
 
+# Def for using config file... didn't use.
 def use_config_read():
     config_data = read_config()
     print(config_data['API'])
 
+# To populate the message 
+def site_message(config_values):
+    
+    first_line = '''----Site Selection----
+Select the site (and select 1 for site data from all sites)'''
 
+    for item in config_values['Sites'].items():
+        tempMessage = f"\n{int(item[0])} : {item[1]}"
+        first_line += tempMessage
+    
+    first_line += "\n-------------------------"
+    return first_line
 #-------------- Config read end -----------------
 
 # Create the input for site list.
 
 
 
-
 ##### Below was a test.. and it took me the better part of an hour to figure it out.
 ### please have this saved as an example to learn from!!!
+# config_data = read_config()
+
+# site_message = site_message(config_data)
+
+# print(site_message)
+
+# API = config_data['API']
+
+# print(API)
+# site_message = {}
+# for item in config_data['Sites'].items(): # .items will mean it comes as a tuple.
+#     print(f"item: {item[0]} -> value: {item[1]}")
+
+
+# # This is the structure for a TWO D loop through.
+# for option, section in config_data.items():
+#     for item, value in section.items():
+#         print(f"({option}) -> ({item}) -> value: {value}")
 config_data = read_config()
-
-print(config_data)
-print(f"hardcode for tjx Marshalls: {config_data['Sites']['2']}")
-
-for option, section in config_data.items():
-    for item, value in section.items():
-        print(f"({option}) -> ({item}) -> value: {value}")
-        
+print(f"Len of config_data: {len(config_data)}")
+print(f"Len of config_data['sites']: {len(config_data['Sites'])}")
