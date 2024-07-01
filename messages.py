@@ -40,27 +40,6 @@ Select the month:
 
 #-------------------------------------- Site Config -----
 
-#TODO: Create the site names from the config file.
-# Site names derived from getting and reading the config file.
-
-
-
-
-
-site_names = {
-    1: "All",
-    2: "TJX-Marshalls",
-    3: "Kiss",
-    4: "GMDR2",
-    5: "Partstown",
-    6: "Sanmar",
-    7: "Dollar General",
-    8: "TMH",
-    9: "Site Not Listed"
-}
-
-num_of_sites = 7 # The number of sites listed (NOT #1 or "Site not listed.")
-
 #---------------------------End Site Config
 
 #-----------------Device Config
@@ -88,20 +67,24 @@ select_month = "Please enter the month (format = MM)"
 
 loop_program_message = '''*****************************************
 Thank you for choosing SMApp for all (most) of your ABI needs.
-We understand you have many options in resources for reporting on Contractor Hours.
-Press Ctrl + C to quit the program, or press the Enter Key to loop back around to the
-main menu.
+We understand you have many options in resources for reporting on Contractor Hours,
+and we thank you for your patronage.
+Type 'Exit' and press the Enter Key to quit the program, or press just the Enter Key
+to loop back around to the main menu.
+
 ******************************************************
 '''
 
 welcome_screen = '''SMAPP-SMAPP-SMAPP-SMAPP-SMAPP-SMAPP
+
 Welcome to SMApp, ABI reporting edition
 Please press enter to continue on to the main menu.
-Por espanol, marko two-o.
+
 SMAPP-SMAPP-SMAPP-SMAPP-SMAPP-SMAPP
 '''
 
 open_emergency = '''!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 Is this an emergency situation where you need a direct list of who's badged-in?
 (y/n):'''
 

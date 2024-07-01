@@ -152,3 +152,146 @@
 2024-06-29 11:26:08,261 - INFO - Entering loop # 2
 2024-06-29 11:26:30,120 - WARNING - User selected 'y' (emergency situation). Processing only a list for today
 2024-06-29 11:26:30,121 - INFO - Entering loop # 3
+2024-06-29 19:10:18,226 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-06-29 19:10:18,227 - INFO - Entering loop # 1
+2024-06-29 19:10:27,030 - INFO - selected site: 1
+2024-06-29 19:10:30,623 - INFO - User selected 'n', and was directed to the main menu
+2024-06-29 19:10:30,633 - CRITICAL - Program closed when it wasn't supposed to. Error: 'headerId'
+2024-06-29 19:13:00,816 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-06-29 19:13:07,777 - INFO - Entering loop # 1
+2024-06-29 19:14:25,786 - INFO - selected site: 2
+2024-06-29 19:14:40,735 - INFO - User selected 'n', and was directed to the main menu
+2024-06-29 19:20:01,903 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-06-29 19:20:01,904 - INFO - Entering loop # 1
+2024-06-29 19:20:09,178 - INFO - selected site: 2
+2024-06-29 19:20:10,795 - INFO - User selected 'n', and was directed to the main menu
+2024-06-29 19:20:10,796 - CRITICAL - Program closed when it wasn't supposed to. Error: 'headerId'
+2024-06-29 19:21:09,318 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-06-29 19:21:09,318 - INFO - Entering loop # 1
+2024-06-29 19:21:15,980 - INFO - selected site: 2
+2024-06-29 19:21:18,032 - INFO - User selected 'n', and was directed to the main menu
+2024-06-29 19:21:18,033 - CRITICAL - Program closed when it wasn't supposed to. Error: 'headerId'
+2024-06-29 19:22:52,608 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-06-29 19:22:52,609 - INFO - Entering loop # 1
+2024-06-29 19:22:58,952 - INFO - selected site: 2
+2024-06-29 19:23:00,129 - INFO - User selected 'n', and was directed to the main menu
+2024-06-29 19:23:00,134 - CRITICAL - Program closed when it wasn't supposed to. Error: 'headerId'
+2024-06-29 19:23:46,625 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-06-29 19:23:46,625 - INFO - Entering loop # 1
+2024-06-29 19:23:59,179 - INFO - selected site: 2
+2024-06-29 19:24:00,517 - INFO - User selected 'n', and was directed to the main menu
+2024-06-29 19:24:00,521 - CRITICAL - Program closed when it wasn't supposed to. Error: 'headerId'
+2024-06-29 19:24:33,374 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-06-29 19:24:33,375 - INFO - Entering loop # 1
+2024-06-29 19:24:36,181 - INFO - selected site: 2
+2024-06-29 19:24:37,267 - INFO - User selected 'n', and was directed to the main menu
+2024-06-29 19:24:37,271 - CRITICAL - Program closed when it wasn't supposed to. Error: 'headerId'
+2024-06-29 19:25:47,905 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-06-29 19:25:47,905 - INFO - Entering loop # 1
+2024-06-29 19:25:50,706 - INFO - selected site: 2
+2024-06-29 19:25:51,731 - INFO - User selected 'n', and was directed to the main menu
+2024-06-29 19:25:51,734 - CRITICAL - Program closed when it wasn't supposed to. Error: 'API_KEY'
+2024-06-29 19:27:05,357 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-06-29 19:27:05,358 - INFO - Entering loop # 1
+2024-06-29 19:27:08,550 - INFO - selected site: 2
+2024-06-29 19:27:10,383 - INFO - User selected 'n', and was directed to the main menu
+2024-06-29 19:27:10,419 - CRITICAL - Program closed when it wasn't supposed to. Error: HTTPSConnectionPool(host='api.us.crosschexcloud.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001A6A9D6F460>: Failed to resolve 'api.us.crosschexcloud.com' ([Errno 11001] getaddrinfo failed)"))
+2024-06-29 19:43:49,336 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-06-29 19:43:49,336 - INFO - Entering loop # 1
+2024-06-29 19:43:56,720 - INFO - selected site: 2
+2024-06-29 19:43:58,454 - INFO - User selected 'n', and was directed to the main menu
+2024-06-29 19:43:58,486 - CRITICAL - Program closed when it wasn't supposed to. Error: HTTPSConnectionPool(host='api.us.crosschexcloud.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002310EF6E460>: Failed to resolve 'api.us.crosschexcloud.com' ([Errno 11001] getaddrinfo failed)"))
+2024-06-29 19:45:44,040 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-06-29 19:45:44,041 - INFO - Entering loop # 1
+2024-06-29 19:45:46,650 - INFO - selected site: 2
+2024-06-29 19:45:48,632 - INFO - User selected 'n', and was directed to the main menu
+2024-06-29 19:45:51,425 - INFO - Entering loop # 2
+2024-06-29 21:02:06,619 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-06-29 21:02:06,620 - INFO - Entering loop # 1
+2024-06-29 21:02:10,652 - INFO - selected site: 2
+2024-06-29 21:02:12,657 - INFO - User selected 'n', and was directed to the main menu
+2024-06-29 21:02:13,218 - INFO - Entering loop # 2
+2024-06-29 21:15:04,761 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-06-29 21:15:04,761 - INFO - Entering loop # 1
+2024-06-29 21:15:08,035 - INFO - selected site: 2
+2024-06-29 21:15:10,297 - INFO - User selected 'n', and was directed to the main menu
+2024-06-29 21:15:10,811 - INFO - Entering loop # 2
+2024-06-29 21:44:50,463 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-06-29 21:44:50,464 - INFO - Entering loop # 1
+2024-06-29 21:44:55,402 - INFO - selected site: 2
+2024-06-29 21:44:59,263 - WARNING - User selected 'y' (emergency situation). Processing only a list for today
+2024-06-29 21:44:59,814 - CRITICAL - Program closed when it wasn't supposed to. Error: 'API' object has no attribute 'get_page_num'
+2024-06-29 21:46:02,505 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-06-29 21:46:02,506 - INFO - Entering loop # 1
+2024-06-29 21:46:06,200 - INFO - selected site: 2
+2024-06-29 21:46:10,567 - WARNING - User selected 'y' (emergency situation). Processing only a list for today
+2024-06-29 21:46:11,101 - CRITICAL - Program closed when it wasn't supposed to. Error: 'API' object has no attribute 'get_page_num'
+2024-06-29 21:46:59,507 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-06-29 21:46:59,508 - INFO - Entering loop # 1
+2024-06-29 21:47:02,805 - INFO - selected site: 2
+2024-06-29 21:47:04,880 - WARNING - User selected 'y' (emergency situation). Processing only a list for today
+2024-06-29 21:49:00,161 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-06-29 21:49:00,162 - INFO - Entering loop # 1
+2024-06-29 21:49:06,495 - INFO - selected site: 2
+2024-06-29 21:49:09,882 - WARNING - User selected 'y' (emergency situation). Processing only a list for today
+2024-06-29 21:49:10,454 - CRITICAL - Program closed when it wasn't supposed to. Error: 'API' object has no attribute 'get_page_num'
+2024-07-01 10:42:10,926 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-07-01 10:42:10,928 - INFO - Entering loop # 1
+2024-07-01 10:42:15,515 - INFO - selected site: 2
+2024-07-01 10:42:23,018 - WARNING - User selected 'y' (emergency situation). Processing only a list for today
+2024-07-01 10:42:23,573 - CRITICAL - Program closed when it wasn't supposed to. Error: 'API' object has no attribute 'get_page_num'
+2024-07-01 10:44:46,102 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-07-01 10:44:46,104 - INFO - Entering loop # 1
+2024-07-01 10:44:49,336 - INFO - selected site: 2
+2024-07-01 10:44:51,909 - WARNING - User selected 'y' (emergency situation). Processing only a list for today
+2024-07-01 10:46:19,771 - ERROR - Set_Page_num failed for : {e}
+2024-07-01 10:46:19,773 - CRITICAL - Program closed when it wasn't supposed to. Error: '<=' not supported between instances of 'int' and 'NoneType'
+2024-07-01 12:37:14,597 - INFO - Failed at set_config_timestamp: module 'util' has no attribute 'write_config'
+2024-07-01 12:53:34,813 - INFO - successfully wrote in timestamp
+2024-07-01 12:53:34,814 - INFO - Failed at set_config_timestamp: name 'right_now' is not defined
+2024-07-01 12:59:36,043 - INFO - successfully wrote in timestamp
+2024-07-01 13:00:00,141 - INFO - sucessfully wrote the new timestamp 2024-07-01 12:58:33.315187
+2024-07-01 13:05:30,883 - INFO - Failed at set_config_timestamp: 'dict' object has no attribute 'write'
+2024-07-01 14:08:10,724 - WARNING - Section 'Data' or key 'last_request' not found in the config file
+2024-07-01 14:08:10,728 - INFO - successfully wrote in timestamp
+2024-07-01 14:08:50,497 - INFO - sucessfully wrote the new timestamp 2024-07-01 14:08:04.501767
+2024-07-01 14:09:49,585 - WARNING - Section 'Data' or key 'last_request' not found in the config file
+2024-07-01 14:09:49,587 - INFO - successfully wrote in timestamp
+2024-07-01 14:10:58,471 - INFO - Failed at set_config_timestamp: 'data'
+2024-07-01 14:12:29,639 - INFO - Failed at set_config_timestamp: option values must be strings
+2024-07-01 14:13:45,034 - INFO - able to find and change the value
+2024-07-01 14:13:45,036 - INFO - successfully wrote in timestamp
+2024-07-01 14:13:51,577 - INFO - sucessfully wrote the new timestamp 2024-07-01 14:13:28.581997
+2024-07-01 14:32:38,743 - INFO - able to find and change the value
+2024-07-01 14:32:38,747 - INFO - successfully wrote in timestamp
+2024-07-01 14:32:40,850 - INFO - sucessfully wrote the new timestamp 2024-07-01 14:32:01.799552
+2024-07-01 14:36:58,771 - INFO - able to find and change the value
+2024-07-01 14:36:58,773 - INFO - successfully wrote in timestamp
+2024-07-01 14:36:59,360 - INFO - sucessfully wrote the new timestamp 2024-07-01 14:36:55.661915
+2024-07-01 14:38:58,756 - INFO - able to find and change the value
+2024-07-01 14:38:58,758 - INFO - successfully wrote in timestamp
+2024-07-01 14:38:58,759 - INFO - sucessfully wrote the new timestamp 2024-07-01 14:38:58.755569
+2024-07-01 14:39:49,157 - INFO - able to find and change the value
+2024-07-01 14:39:49,158 - INFO - successfully wrote in timestamp
+2024-07-01 14:39:49,159 - INFO - sucessfully wrote the new timestamp 2024-07-01 14:39:49.157446
+2024-07-01 14:41:24,137 - INFO - able to find and change the value
+2024-07-01 14:41:24,141 - INFO - successfully wrote in timestamp
+2024-07-01 14:41:24,142 - INFO - sucessfully wrote the new timestamp 2024-07-01 14:41:24.135966
+2024-07-01 14:42:26,148 - INFO - able to find and change the value
+2024-07-01 14:42:26,151 - INFO - successfully wrote in timestamp
+2024-07-01 14:42:26,152 - INFO - sucessfully wrote the new timestamp 2024-07-01 14:42:26.147010
+2024-07-01 14:44:05,831 - INFO - able to find and change the value
+2024-07-01 14:44:05,832 - INFO - successfully wrote in timestamp
+2024-07-01 14:44:05,833 - INFO - sucessfully wrote the new timestamp 2024-07-01 14:44:05.830174
+2024-07-01 14:45:44,694 - INFO - able to find and change the value
+2024-07-01 14:45:44,696 - INFO - successfully wrote in timestamp
+2024-07-01 14:45:44,696 - INFO - sucessfully wrote the new timestamp 2024-07-01 14:45:44.693765
+2024-07-01 14:47:17,812 - INFO - able to find and change the value
+2024-07-01 14:47:17,814 - INFO - successfully wrote in timestamp
+2024-07-01 14:47:17,815 - INFO - sucessfully wrote the new timestamp 2024-07-01 14:47:17.810743
+2024-07-01 14:48:53,688 - INFO - able to find and change the value
+2024-07-01 14:48:53,690 - INFO - successfully wrote in timestamp
+2024-07-01 14:48:53,691 - INFO - sucessfully wrote the new timestamp 2024-07-01 14:48:53.687814
+2024-07-01 14:50:14,224 - INFO - able to find and change the value
+2024-07-01 14:50:14,225 - INFO - successfully wrote in timestamp
+2024-07-01 14:50:14,226 - INFO - sucessfully wrote the new timestamp 2024-07-01 14:50:14.223752

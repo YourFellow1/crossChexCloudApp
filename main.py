@@ -11,8 +11,12 @@ from logging.handlers import RotatingFileHandler
 import signal
 import messages
 import util
-
+import api
+from api import API, begin_of_day, end_of_day
+import times
 from logger_config import logger as logging
+
+
 
 
 
@@ -34,12 +38,15 @@ signal.signal(signal.SIGINT, signal_handler)
 mainLoopCounter = 0
 emergency = False    
 site_config = util.read_config()
+num_of_sites = len(site_config['Sites']) # Includes "all" sites as #1
+report_type = len(site_config['Report']) # includes 
 
 
 def main():
     global mainLoopCounter
     global emergency
-    global site_config
+    global site_config # All the configuration data. Not just site.
+    global num_of_sites
     # Overall try/catch
     try:
         # Make sure the directory for the CSV files exists.
@@ -65,15 +72,27 @@ def main():
             
             # Check for an emergency situation.
             emergency = util.get_emergency()
-                        
+            
+            
+            
+            
+            
+# Time to logic this. We're only going ot pull an API if it's for today,
+# AND the previous month of days is not present.
+# How in-depth do we want to go withe folder structure? It will all be dynamic, but still...
+            
             if emergency:
                 #TODO: Pull today's list onsite
                     # Run API pull to get token
                     # Run API pull w/token.
-                    # Make list a dictionary.
+                # okay_to_run = "" TODO: Get this from times/util.
+                new_list = new_api.pull_today()
+                print(new_list)
+                    
                     # Filter list by devices
                     # Export a list of poeple (all badge-ins)
                     # export the list of who's clocked in.
+                    # Exit program.
                 pass
                 #TODO: Exit the program.
                 # Else:
@@ -85,9 +104,37 @@ def main():
                             # Hours
                             # groups
                             # site(s)
-                            
-                    
+            # More items to add/consider/rules:
+                # When was the last request pulled?
+                # Is it end of day request? Clock out all that's still clocked in.
+                    # Not considered a pull for the day.
+                # Historical day will be checked and filled in the next day
+                    # Folder structure for the historical - that's findable by date
+                    # How far to check back? 1 week? it shouldn't be more than a day or two.
+                # Could DSR have two components
+                    # Count of people clocked in from each group, then total manhours for previous day?
+
+            if not emergency:
+                
+                # Which report is the user wanting?
+                report_message = report_message(site_config)
+                data_type = util.get_num_selection(report_message)
+                logging.info(f"User selected data type: {data_type}")
+
+                # Respond to the report request. ie, get all remaining info.
+                
+                
+
+            # Is a data pull necessary?
+            # TODO: some check for the last pulled data. If not emergency, or EOD then we look at this.
+            #  If EOD, then 
+            # New instance of API class. Will naturally get its own token.
+            new_api = API()
             
+            print(f"number of pages necessary: {new_api.page_num}")     
+
+                    
+            input(messages.loop_program_message)
             
     except Exception as e:
         logging.critical(f"Program closed when it wasn't supposed to. Error: {e}")
@@ -97,10 +144,8 @@ def main():
         input("Press Enter to Exit... (disgracefully)")
         
     else:
-        logging.info("Successful completion of the program. Looping back around")
+        logging.info("Successful completion of the program. Goodbye")
         
-        ### Use an input ot manually close go back to the front of the loop.
-        input(messages.loop_program_message)
 
 
 if __name__ == "__main__":

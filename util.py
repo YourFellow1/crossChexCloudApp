@@ -38,13 +38,13 @@ def get_emergency():
         if emergencyMessage == 'y':
             print("Confirmed, emergency. Calculating now...")
             logging.warning(f"User selected '{emergencyMessage}' (emergency situation). Processing only a list for today")
-            emergency = True
-            break
+            return True
+        
         elif emergencyMessage == 'n':
             print("Aight. Carry on.")
             logging.info(f"User selected '{emergencyMessage}', and was directed to the main menu")
-            emergency = False
-            break
+            return False
+        
         else:
             print("Please input 'y' for yes emergency or 'n' for no emergency.")
 
@@ -112,24 +112,44 @@ def read_config():
     except Exception as e:
         logging.error(f"An error occurred when trying to read the config file: {e}")
 
-# Def for using config file... didn't use.
-def use_config_read():
-    config_data = read_config()
-    print(config_data['API'])
 
 # To populate the message 
 def site_message(config_values):
     
-    first_line = '''----Site Selection----
+    first_line = '''
+    ----Site Selection----
 Select the site (and select 1 for site data from all sites)'''
 
     for item in config_values['Sites'].items():
         tempMessage = f"\n{int(item[0])} : {item[1]}"
         first_line += tempMessage
     
-    first_line += "\n-------------------------"
+    first_line += "\n-------------------------\n"
     return first_line
+
+
+# message for reports (use same structure as site_message)
+def report_message(config_values):
+    
+    first_line = '''
+    ------- Report Selection ---------
+    Select the type of report
+    (for "who's on site right now") - restart and select 'y' for emergency'''
+    
+    for item in config_values['Report'].items():
+        tempMessage = f"\n{int(item[0])} : {item[1]}"
+        first_line += tempMessage
+        
+    first_line += "\n------------------------------\n"
+    return first_line    
+    
+    
 #-------------- Config read end -----------------
+
+# Get remaining info for report to be pulled! (pre-API)
+def respond_to_data_type(site_num):
+    
+    pass
 
 # Create the input for site list.
 
