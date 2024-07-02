@@ -295,3 +295,130 @@
 2024-07-01 14:50:14,224 - INFO - able to find and change the value
 2024-07-01 14:50:14,225 - INFO - successfully wrote in timestamp
 2024-07-01 14:50:14,226 - INFO - sucessfully wrote the new timestamp 2024-07-01 14:50:14.223752
+2024-07-01 15:06:20,733 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-07-01 15:06:20,734 - INFO - Entering loop # 1
+2024-07-01 15:06:32,068 - INFO - selected site: 2
+2024-07-01 15:36:00,527 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-07-01 15:36:00,528 - INFO - Entering loop # 1
+2024-07-01 15:36:18,333 - INFO - selected site: 2
+2024-07-01 15:36:23,108 - WARNING - User selected 'y' (emergency situation). Processing only a list for today
+2024-07-01 15:36:23,112 - CRITICAL - Program closed when it wasn't supposed to. Error: local variable 'new_api' referenced before assignment
+2024-07-01 15:38:00,648 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-07-01 15:38:00,649 - INFO - Entering loop # 1
+2024-07-01 15:38:05,227 - INFO - selected site: 2
+2024-07-01 15:38:07,578 - WARNING - User selected 'y' (emergency situation). Processing only a list for today
+2024-07-01 15:38:23,164 - ERROR - Set_Page_num failed for : {e}
+2024-07-01 15:38:23,165 - CRITICAL - Program closed when it wasn't supposed to. Error: '<=' not supported between instances of 'int' and 'NoneType'
+2024-07-01 15:39:37,980 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-07-01 15:39:37,981 - INFO - Entering loop # 1
+2024-07-01 15:39:43,317 - INFO - selected site: 2
+2024-07-01 15:39:45,198 - WARNING - User selected 'y' (emergency situation). Processing only a list for today
+2024-07-01 15:43:35,747 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-07-01 15:43:35,747 - INFO - Entering loop # 1
+2024-07-01 15:43:41,705 - INFO - selected site: 2
+2024-07-01 15:43:43,000 - WARNING - User selected 'y' (emergency situation). Processing only a list for today
+2024-07-01 15:57:50,510 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-07-01 15:57:50,510 - INFO - Entering loop # 1
+2024-07-01 15:57:56,235 - INFO - selected site: 2
+2024-07-01 15:57:56,987 - WARNING - User selected 'y' (emergency situation). Processing only a list for today
+2024-07-01 15:58:06,857 - ERROR - Set_Page_num failed for : {e}
+2024-07-01 15:58:06,857 - ERROR - Unable to get initial API instance '<=' not supported between instances of 'int' and 'NoneType'
+2024-07-01 15:58:06,859 - INFO - able to find and change the value
+2024-07-01 15:58:06,860 - INFO - successfully wrote in timestamp
+2024-07-01 15:58:06,861 - INFO - sucessfully wrote the new timestamp 2024-07-01 15:58:06.858107
+2024-07-01 15:58:06,861 - INFO - At leas the config_timestamp was reset
+2024-07-01 15:59:05,641 - INFO - Entering loop # 2
+2024-07-01 16:00:32,565 - INFO - selected site: 2
+2024-07-01 16:00:34,766 - WARNING - User selected 'y' (emergency situation). Processing only a list for today
+2024-07-01 16:00:43,053 - ERROR - Set_Page_num failed for : {e}
+2024-07-01 16:00:43,054 - ERROR - Unable to get initial API instance '<=' not supported between instances of 'int' and 'NoneType'
+2024-07-01 16:00:43,055 - INFO - able to find and change the value
+2024-07-01 16:00:43,057 - INFO - successfully wrote in timestamp
+2024-07-01 16:00:43,058 - INFO - sucessfully wrote the new timestamp 2024-07-01 16:00:43.054564
+2024-07-01 16:00:43,058 - INFO - At leas the config_timestamp was reset
+2024-07-01 16:00:50,833 - INFO - Entering loop # 3
+2024-07-01 16:08:01,971 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-07-01 16:08:01,972 - CRITICAL - Program closed when it wasn't supposed to. Error: local variable 'running' referenced before assignment
+2024-07-01 16:08:51,778 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-07-01 16:08:51,778 - INFO - Entering loop # 1
+2024-07-01 16:08:56,440 - INFO - selected site: 2
+2024-07-01 16:08:59,255 - WARNING - User selected 'y' (emergency situation). Processing only a list for today
+2024-07-01 16:10:59,074 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-07-01 16:10:59,075 - INFO - Entering loop # 1
+2024-07-01 16:11:05,803 - INFO - selected site: 2
+2024-07-01 16:11:08,781 - WARNING - User selected 'y' (emergency situation). Processing only a list for today
+2024-07-01 16:12:20,732 - ERROR - Set_Page_num failed for : {e}
+2024-07-01 16:12:20,732 - ERROR - Unable to get initial API instance '<=' not supported between instances of 'int' and 'NoneType'
+2024-07-01 16:12:20,735 - INFO - able to find and change the value
+2024-07-01 16:12:20,736 - INFO - successfully wrote in timestamp
+2024-07-01 16:12:20,736 - INFO - sucessfully wrote the new timestamp 2024-07-01 16:12:20.733618
+2024-07-01 16:12:20,737 - INFO - At least the config_timestamp was reset
+2024-07-01 16:14:05,526 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-07-01 16:14:05,527 - INFO - Entering loop # 1
+2024-07-01 16:14:13,569 - INFO - selected site: 2
+2024-07-01 16:14:16,035 - WARNING - User selected 'y' (emergency situation). Processing only a list for today
+2024-07-01 16:14:52,167 - ERROR - Set_Page_num failed for : {e}
+2024-07-01 16:14:52,168 - ERROR - Unable to get initial API instance '<=' not supported between instances of 'int' and 'NoneType'
+2024-07-01 16:14:52,170 - INFO - able to find and change the value
+2024-07-01 16:14:52,171 - INFO - successfully wrote in timestamp
+2024-07-01 16:14:52,172 - INFO - sucessfully wrote the new timestamp 2024-07-01 16:14:52.168249
+2024-07-01 16:14:52,172 - INFO - At least the config_timestamp was reset
+2024-07-01 16:16:39,927 - INFO - Entering loop # 2
+2024-07-01 16:16:46,668 - INFO - Selected to close via ctrl + c
+2024-07-01 16:16:46,669 - CRITICAL - Program closed when it wasn't supposed to. Error: 
+2024-07-01 16:20:53,146 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-07-01 16:20:53,147 - INFO - Entering loop # 1
+2024-07-01 16:20:59,917 - INFO - selected site: 2
+2024-07-01 16:21:01,885 - WARNING - User selected 'y' (emergency situation). Processing only a list for today
+2024-07-01 16:21:21,256 - ERROR - Set_Page_num failed for : {e}
+2024-07-01 16:21:21,258 - ERROR - Unable to get initial API instance int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+2024-07-01 16:21:21,263 - INFO - able to find and change the value
+2024-07-01 16:21:21,267 - INFO - successfully wrote in timestamp
+2024-07-01 16:21:21,268 - INFO - sucessfully wrote the new timestamp 2024-07-01 16:21:21.259138
+2024-07-01 16:21:21,269 - INFO - At least the config_timestamp was reset
+2024-07-01 16:24:15,423 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-07-01 16:24:15,424 - INFO - Entering loop # 1
+2024-07-01 16:24:22,668 - INFO - selected site: 2
+2024-07-01 16:24:25,377 - WARNING - User selected 'y' (emergency situation). Processing only a list for today
+2024-07-02 07:53:40,011 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-07-02 07:53:40,012 - INFO - Entering loop # 1
+2024-07-02 07:54:53,934 - INFO - selected site: 2
+2024-07-02 07:54:56,605 - WARNING - User selected 'y' (emergency situation). Processing only a list for today
+2024-07-02 08:07:38,872 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-07-02 08:07:38,873 - INFO - Entering loop # 1
+2024-07-02 08:07:45,778 - INFO - selected site: 2
+2024-07-02 08:07:47,291 - WARNING - User selected 'y' (emergency situation). Processing only a list for today
+2024-07-02 08:09:31,117 - INFO - There was no exception when creating API instance
+2024-07-02 08:09:31,123 - INFO - able to find and change the value
+2024-07-02 08:09:31,125 - INFO - successfully wrote in timestamp
+2024-07-02 08:09:31,125 - INFO - sucessfully wrote the new timestamp 2024-07-02 08:09:31.117482
+2024-07-02 08:09:31,125 - INFO - After successful API, config time was reset
+2024-07-02 08:11:55,319 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-07-02 08:11:55,319 - INFO - Entering loop # 1
+2024-07-02 08:11:57,866 - INFO - selected site: 2
+2024-07-02 08:11:59,570 - WARNING - User selected 'y' (emergency situation). Processing only a list for today
+2024-07-02 08:44:32,832 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-07-02 08:44:32,833 - INFO - Entering loop # 1
+2024-07-02 08:44:36,622 - INFO - selected site: 2
+2024-07-02 08:44:38,076 - WARNING - User selected 'y' (emergency situation). Processing only a list for today
+2024-07-02 08:44:39,219 - INFO - Total number of records: 92
+2024-07-02 08:44:40,284 - INFO - Got list number 1 of 1
+2024-07-02 08:45:11,821 - INFO - There was no exception when creating API instance
+2024-07-02 08:45:11,824 - INFO - able to find and change the value
+2024-07-02 08:45:11,826 - INFO - successfully wrote in timestamp
+2024-07-02 08:45:11,827 - INFO - sucessfully wrote the new timestamp 2024-07-02 08:45:11.822264
+2024-07-02 08:45:11,827 - INFO - After successful API, config time was reset
+2024-07-02 08:45:21,950 - INFO - Entering loop # 2
+2024-07-02 08:50:52,653 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-07-02 08:50:52,653 - INFO - Entering loop # 1
+2024-07-02 08:50:55,080 - INFO - selected site: 2
+2024-07-02 08:50:56,890 - WARNING - User selected 'y' (emergency situation). Processing only a list for today
+2024-07-02 08:50:57,728 - INFO - Total number of records: 92
+2024-07-02 08:50:58,714 - INFO - Got list number 1 of 1
+2024-07-02 08:51:14,921 - INFO - Program exited safely on its own
+2024-07-02 17:35:13,063 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-07-02 17:35:13,063 - INFO - Entering loop # 1
+2024-07-02 17:35:16,515 - INFO - selected site: 2
+2024-07-02 17:35:17,278 - WARNING - User selected 'y' (emergency situation). Processing only a list for today
+2024-07-02 17:35:18,122 - INFO - Total number of records: 176
+2024-07-02 17:35:19,147 - INFO - Got list number 1 of 2

@@ -6,6 +6,7 @@ from requests import request
 import json
 from math import ceil
 
+import times
 
 config_data = util.read_config()
 api_config = config_data['API']
@@ -61,6 +62,7 @@ class API:
         # Send a request and get the authorize.token for full requests.
         payload={'header[nameSpace]': 'authorize.token',
                     'header[nameAction]': 'token',
+                    'header[version]': '1.0',
                     'header[requestId]': str(self.headerId),
                     'header[timestamp]': str(self.timestamp),
                     'payload[api_key]': str(self.api_key),
@@ -85,7 +87,7 @@ class API:
                  'header[timestamp]': str(self.begin_time),
                  'authorize[type]': 'token',
                  'authorize[token]': str(self.token),
-                 'payload[being_time]': str(self.begin_time),
+                 'payload[begin_time]': str(self.begin_time),
                  'payload[end_time]': str(self.end_time),
                  'payload[workno]': str(self.workno),
                  'payload[order]': 'asc',
@@ -109,20 +111,28 @@ class API:
     def pull_today(self):
         # Create list for info we're grabbing. 
         today_list = []
-
-        # Change the 'self' to 100 records per page.
-        self.num_per_page = 100
         
         # Leave in the default dates of today.
         
         # get the num of pages necessary.
-        loops = self.set_page_num()
+        loops = self.set_page_num_total()
+        
+        # change the num of records per page to max 100.
+        self.num_per_page = 100
         
         # Loop through and pull the data.
         while self.page_num <= loops:
             
             # Run request, change pageNum for next loop, and append to list.
-            today_list.append(self.get_single_request())
+            temp_response = self.get_single_request()
+            
+            # log the loop numbers
+            logging.info(f"Got list number {self.page_num} of {loops}")
+
+            # Filter the response info as we need it (same as before)
+            today_list.append(util.filter_list(temp_response))
+            
+            # Imcrement the page num and continue.
             self.page_num += 1
             
         return today_list
@@ -132,12 +142,15 @@ class API:
     
     
     # Get num of pages needed for the total request.
-    def set_page_num(self):
+    def set_page_num_total(self):
         try:
             # Pull a single request with the given dates, and get num_of_pages.
             # Will produce a num of records, right? Do we leave it at 1 per page?
             response_text = self.get_single_request()
-            records = response_text['payload']['pageCount']
+            records = int(response_text['payload']['pageCount'])
+            
+            # Log number of total records.
+            logging.info(f"Total number of records: {records}")
             
             # take records. divide by 10 and do ceiling. that will be num of pages for request.
             return ceil(records/100)

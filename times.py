@@ -6,6 +6,7 @@ from logger_config import logger as logging
 import globals
 import os
 import configparser
+import math
 
 # Need to compare times, less than minute Return tuple of (Needs a timer BOOL, int of seconds?)
 def minute_less():
@@ -50,6 +51,7 @@ def get_config_timestamp():
 
 
 # Write new timestamp to config file
+# make sure to call this in MAIN!!
 def set_config_timestamp():
     right_now = datetime.now()
     try:
@@ -76,3 +78,30 @@ def write_config_time(timestamp):
     with open(config_file, 'w') as configfile:
         config.write(configfile)
     logging.info("successfully wrote in timestamp")
+
+# take in two times, if time1 is within debounce of time2 
+# Return TRUE it it's within the parameter of debounce.
+def within_debounce(time1, time2, debounce):
+    
+    # DOES matter which time is which
+    timedelta = time2 - time1
+    
+    print(f"Time Delta: {timedelta}")
+    if int(timedelta.seconds) < debounce:
+        return True
+    return False
+
+# Take a string and make it work as datetime.
+def str_to_datetime(str):
+    # 2024-07-02 17:14:23,720
+    # '2024-07-02T09:52:36+00:00' <- from the post request.
+    
+    time1 = datetime.fromisoformat(str)
+    
+    return time1
+
+def dt_to_string(dt):
+    
+    time1 = dt.strftime("%Y-%m-%dT%H:%M:%S")
+    
+    return time1

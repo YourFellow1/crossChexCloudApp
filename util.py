@@ -10,7 +10,9 @@ import os
 from messages import open_emergency, welcome_screen
 from logger_config import logger as logging
 import configparser
-
+from datetime import datetime, date, timedelta
+import times
+import pytz
 
 
 #------------- DEFs from MAIN start --------------------------
@@ -53,9 +55,14 @@ def welcome_menu():
     input(welcome_screen)
     pass
 
-# Need to get site from input. Return number.
-def get_site_input_num():
-    pass
+# Need to get site from input. return device names [list]
+def get_device_by_num(num):
+    # take in the number and get the device name
+    device_list = []
+    for item, value in config_data['Devices'].items():
+        if value == str(num):
+            device_list.append(item)
+    return device_list
 
 # Loop that can be used for any number input. (Int >0 only)
 def get_num_selection(message, botRange, topRange, number_purpose):
@@ -75,7 +82,8 @@ def get_num_selection(message, botRange, topRange, number_purpose):
 
 def get_site_devices(num, config_data):
     #TODO: need to create a list of devices.
-    pass
+
+        pass
 
 #------------- DEFs from MAIN end --------------------------
 
@@ -148,16 +156,110 @@ def report_message(config_values):
 
 # Get remaining info for report to be pulled! (pre-API)
 def respond_to_data_type(site_num):
-    
+    #TODO: Big-ol TODO.
     pass
 
+
+#-------- filter and sort functions -----------
+
+## List = [last name, first name, workno, device, timestamp]
+# Well, the filter list is pretty set. Don't need to touch in the refactoring.
+def filter_list(page):
+    compiled_list = []
+    for name in page["payload"]["list"]:
+            temp_list = []
+            
+            # Employee info - Sequence matters.
+            emp = name.get("employee")
+            temp_list.append(emp.get("last_name"))
+            temp_list.append(emp.get("first_name"))
+            temp_list.append(emp.get("workno"))
+
+            # Device
+            temp_list.append(name.get("device").get("name"))
+
+            # LL: format with isoformat.
+            temp_time = datetime.fromisoformat(name.get("checktime")) - timedelta(hours=4)
+            # temp_date = (str(temp_time.month) + "/" + str(temp_time.day) + "/" + str(temp_time.year))
+            tempTZ_datetime = temp_time.replace(tzinfo=pytz.utc)
+            temp_datetime = tempTZ_datetime.isoformat(timespec='seconds')
+            # temp_date = (temp_time.strftime("%m/%d/%Y"))
+            # temp_minute = (temp_time.strftime("%H:%M:%S"))
+            # Example: '2024-05-06T21:06:16+00:00'
+            temp_list.append(temp_datetime)
+
+            # Add to formatted list
+            compiled_list.append(temp_list)
+    return compiled_list
+
+# Function to figure out who's on site.
+def who_onsite(in_list, site):
+    
+    # The incoming list has already been filtered.
+    # And this should be all from the same date.
+    # need to see if people are clocked in or not
+    # Separate all-purpose clock-in/out scenario?
+    
+    onsite_today = clock_in(in_list, emergency=True, site=site)
+    pass
+
+
+
+# Run through a raw list and see who is clocked-in.
+# when working with EOD, emergency will be false.
+def clock_in(raw_list, emergency, site):
+    #Raw list starts with: [last name, first name, workno, device, timestamp]
+    # Assumptions:
+    # anything in less than [# (20?)] seconds isn't a separate badge-out.
+    debounce_seconds = 75
+    # anything still clocked ini stays in for emergency.
+    # anyone still clocked in @ time of report is "clocked-Out" on this list.
+
+    # Sort by workno.
+    sorted_list = sorted(raw_list, key=lambda x: x[2]) # COOL. THIS IS HOW YOU SORT BY NOT FIRST INDEX!
+
+    # By devices passed through in "site"
+    device_sorted_list = []
+    for list in sorted_list:
+        if list[2] in site:
+            device_sorted_list.append(list)
+    
+    ## Go through each, and append(status).
+    in_out_list = []
+    last_employee = ''
+    last_time = time.now()
+    last_date = date.today()
+    
+    # Status options: in, out, ignore
+    last_status = ''
+    for list in device_sorted_list:
+        #Compare times: True = Not a duplicate punch (outside the debounce time).
+        # Compare dates first. date's the same, continue. If different...
+        ####### Wait! compare one outcome at a time.
+        
+        
+        
+        in_out_list.append(list)
+        last_employee = list[2]
+        last_time = list[5]
+        last_status = list[6]
+        
+        
+    if emergency:
+        #TODO: evaluate each person, add to list to return.
+        pass
+    else:
+        #TODO: evaluate each person, set final status?
+        pass
+    pass
+#--------------- Filter and sort f(x) end -----------
 # Create the input for site list.
 
 
 
 ##### Below was a test.. and it took me the better part of an hour to figure it out.
 ### please have this saved as an example to learn from!!!
-# config_data = read_config()
+config_data = read_config()
 
 # site_message = site_message(config_data)
 
@@ -175,6 +277,6 @@ def respond_to_data_type(site_num):
 # for option, section in config_data.items():
 #     for item, value in section.items():
 #         print(f"({option}) -> ({item}) -> value: {value}")
-config_data = read_config()
-print(f"Len of config_data: {len(config_data)}")
-print(f"Len of config_data['sites']: {len(config_data['Sites'])}")
+# config_data = read_config()
+# print(f"Len of config_data: {len(config_data)}")
+# print(f"Len of config_data['sites']: {len(config_data['Sites'])}")

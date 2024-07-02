@@ -15,6 +15,7 @@ import api
 from api import API, begin_of_day, end_of_day
 import times
 from logger_config import logger as logging
+import sys
 
 
 
@@ -83,17 +84,44 @@ def main():
             
             if emergency:
                 #TODO: Pull today's list onsite
-                    # Run API pull to get token
-                    # Run API pull w/token.
-                # okay_to_run = "" TODO: Get this from times/util.
-                new_list = new_api.pull_today()
-                print(new_list)
+                
+                # Check for minute or less since last request.
+                must_countdown = times.minute_less()
+                # If must_countdown = (True, seconds), start countdown
+                if must_countdown[0]:
+                    print("60 seconds hasn't elapsed since the last API request")
+                    print("60 seconds MUST elapse between requests")
+                    times.countdown(must_countdown[1])
+                    # ^^ ends with 'moving on' messgae.
+                
+                # wrap in a try to make sure the config time gets reset.
+                try:
+                    # Instance of API
+                    new_api = API()
+                    print(f"WHAT's THE TOKEN?@! {new_api.token}")
+                    # Pull today's (based on default)
+                    new_list = new_api.pull_today()
                     
-                    # Filter list by devices
-                    # Export a list of poeple (all badge-ins)
-                    # export the list of who's clocked in.
-                    # Exit program.
-                pass
+                    print(new_list)
+                    # Cool. now we have the list for a day.
+                    # Pass it through and create a function for who's onsite.
+                    # Now sort, and evaluate the data.
+                    onsite_list = util.who_onsite(new_list)
+                    
+                    # for now, exit the program.
+                    raise SystemExit
+                        # Filter list by devices
+                        # Export a list of poeple (all badge-ins)
+                        # export the list of who's clocked in.
+                        # Exit program.
+                except Exception as e:
+                    logging.error(f"Unable to get initial API instance {e}")
+                    times.set_config_timestamp()
+                    logging.info("At least the config_timestamp was reset")
+                    raise SystemExit
+
+                    
+                    
                 #TODO: Exit the program.
                 # Else:
                     # Check for historical data to work with.
@@ -134,7 +162,10 @@ def main():
             print(f"number of pages necessary: {new_api.page_num}")     
 
                     
-            input(messages.loop_program_message)
+            to_exit = input(messages.loop_program_message)
+            
+            if to_exit.lower() == 'exit':
+                exit
             
     except Exception as e:
         logging.critical(f"Program closed when it wasn't supposed to. Error: {e}")
@@ -142,7 +173,13 @@ def main():
         
         ### Use an input to manually close the program after failure.
         input("Press Enter to Exit... (disgracefully)")
-        
+    
+    except KeyboardInterrupt:
+        logging.info("G'day, mate.")
+        print("g'day, mate")
+    
+    except SystemExit:
+        logging.info("Program exited safely on its own")
     else:
         logging.info("Successful completion of the program. Goodbye")
         
