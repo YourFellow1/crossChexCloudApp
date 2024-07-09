@@ -218,17 +218,35 @@ def clock_in(raw_list, emergency, site):
     # Sort by workno.
     sorted_list = sorted(raw_list, key=lambda x: x[2]) # COOL. THIS IS HOW YOU SORT BY NOT FIRST INDEX!
 
+    # get a tuple or more of site device name(s).
+    devices = get_device_by_num(site)
+    
     # By devices passed through in "site"
     device_sorted_list = []
     for list in sorted_list:
-        if list[2] in site:
+        if list[3].lower() in devices:
             device_sorted_list.append(list)
-    
+    print(f"device_sorted_list: {device_sorted_list}")
     ## Go through each, and append(status).
     in_out_list = []
     last_employee = ''
-    last_time = time.now()
-    last_date = date.today()
+    last_time = datetime.now()
+    new_employee = False
+    new_day = False
+    within_debounce = False
+
+    # '''If it's a new employee, clock in.
+    # if it's same employee, new day, clock in.
+    # if it's same employee, same day, within debounce - ignore.
+    # if it's same employee, same day, outside debounce - change state (what about ignore?)
+    
+    
+    # to check who's onsite:
+    # list, same employee, last status for today.
+    
+    # To automatically clock out:
+    
+    # '''
     
     # Status options: in, out, ignore
     last_status = ''
@@ -236,7 +254,9 @@ def clock_in(raw_list, emergency, site):
         #Compare times: True = Not a duplicate punch (outside the debounce time).
         # Compare dates first. date's the same, continue. If different...
         ####### Wait! compare one outcome at a time.
-        
+        if list[2] != last_employee:
+            list.append('in')
+            pass
         
         
         in_out_list.append(list)

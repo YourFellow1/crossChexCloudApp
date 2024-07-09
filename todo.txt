@@ -1,0 +1,14 @@
+List of TODO:
+1. clock-in/out Filter 2 hrs
+2. Store historical data 10 hrs
+3. Check historical data 2 hrs
+4. Hours worked filter 3 hrs.
+5. Establish grouping
+6. Report setup.
+7. Deployment plan
+8. Kivy upgrade.
+9. Deploy to apple store? and android store?
+10. beta test on tablet.
+11. Flow diagram
+12. Site process updates.
+13. Config testing.

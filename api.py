@@ -109,6 +109,7 @@ class API:
     
     # Get data for onsite's today.
     def pull_today(self):
+        
         # Create list for info we're grabbing. 
         today_list = []
         
@@ -130,7 +131,11 @@ class API:
             logging.info(f"Got list number {self.page_num} of {loops}")
 
             # Filter the response info as we need it (same as before)
-            today_list.append(util.filter_list(temp_response))
+            ### Debug learned - must add to today_list one at a time, or we
+            ## have one giant list per 100!
+            temp_list = util.filter_list(temp_response)
+            for list in temp_list:
+                today_list.append(list)
             
             # Imcrement the page num and continue.
             self.page_num += 1

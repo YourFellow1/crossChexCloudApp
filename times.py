@@ -32,7 +32,7 @@ def countdown(seconds):
     minutes = 0
     while seconds > 0:
         timeformat = '{:02d}:{:02d}'.format(minutes, seconds)
-        print(timeformat, end='\r')
+        print("Time Remaining: " + timeformat, end='\r')
         time.sleep(1)
         seconds -= 1
     print("Moving on!")

@@ -54,6 +54,9 @@ def main():
         csv_directory = 'historical csv files'
         util.ensure_directory_exists(csv_directory)
         
+        # TODO: Check past month.
+        # TODO: Initialize most recent month.
+        
         while running:
             mainLoopCounter += 1
             logging.info(f"Entering loop # {mainLoopCounter}")
@@ -98,7 +101,7 @@ def main():
                 try:
                     # Instance of API
                     new_api = API()
-                    print(f"WHAT's THE TOKEN?@! {new_api.token}")
+
                     # Pull today's (based on default)
                     new_list = new_api.pull_today()
                     
@@ -106,8 +109,10 @@ def main():
                     # Cool. now we have the list for a day.
                     # Pass it through and create a function for who's onsite.
                     # Now sort, and evaluate the data.
-                    onsite_list = util.who_onsite(new_list)
-                    
+                    onsite_list = util.who_onsite(new_list, site)
+                    print(f"List of onsite personnel = {onsite_list}")
+
+
                     # for now, exit the program.
                     raise SystemExit
                         # Filter list by devices

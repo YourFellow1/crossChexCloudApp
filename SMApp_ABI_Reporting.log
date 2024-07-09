@@ -422,3 +422,145 @@
 2024-07-02 17:35:17,278 - WARNING - User selected 'y' (emergency situation). Processing only a list for today
 2024-07-02 17:35:18,122 - INFO - Total number of records: 176
 2024-07-02 17:35:19,147 - INFO - Got list number 1 of 2
+2024-07-08 14:51:27,215 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-07-08 14:51:27,216 - INFO - Entering loop # 1
+2024-07-08 14:51:30,355 - INFO - selected site: 2
+2024-07-08 14:51:31,708 - WARNING - User selected 'y' (emergency situation). Processing only a list for today
+2024-07-08 14:51:32,727 - INFO - Total number of records: 106
+2024-07-08 14:51:33,853 - INFO - Got list number 1 of 2
+2024-07-08 14:51:47,165 - INFO - Got list number 2 of 2
+2024-07-08 14:51:47,170 - ERROR - Unable to get initial API instance who_onsite() missing 1 required positional argument: 'site'
+2024-07-08 14:51:47,173 - INFO - able to find and change the value
+2024-07-08 14:51:47,174 - INFO - successfully wrote in timestamp
+2024-07-08 14:51:47,174 - INFO - sucessfully wrote the new timestamp 2024-07-08 14:51:47.171873
+2024-07-08 14:51:47,175 - INFO - At least the config_timestamp was reset
+2024-07-08 14:51:47,175 - INFO - Program exited safely on its own
+2024-07-08 14:52:19,611 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-07-08 14:52:19,612 - INFO - Entering loop # 1
+2024-07-08 14:52:23,665 - INFO - selected site: 2
+2024-07-08 14:52:24,326 - WARNING - User selected 'y' (emergency situation). Processing only a list for today
+2024-07-08 14:52:48,500 - INFO - Total number of records: 106
+2024-07-08 14:52:49,737 - INFO - Got list number 1 of 2
+2024-07-08 14:52:50,275 - INFO - Got list number 2 of 2
+2024-07-08 14:52:50,280 - ERROR - Unable to get initial API instance argument of type 'int' is not iterable
+2024-07-08 14:52:50,281 - INFO - able to find and change the value
+2024-07-08 14:52:50,282 - INFO - successfully wrote in timestamp
+2024-07-08 14:52:50,283 - INFO - sucessfully wrote the new timestamp 2024-07-08 14:52:50.280858
+2024-07-08 14:52:50,284 - INFO - At least the config_timestamp was reset
+2024-07-08 14:52:50,284 - INFO - Program exited safely on its own
+2024-07-08 14:58:03,482 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-07-08 14:58:03,483 - INFO - Entering loop # 1
+2024-07-08 14:58:09,301 - INFO - selected site: 2
+2024-07-08 14:58:10,866 - WARNING - User selected 'y' (emergency situation). Processing only a list for today
+2024-07-08 14:58:11,952 - INFO - Total number of records: 106
+2024-07-08 14:58:13,125 - INFO - Got list number 1 of 2
+2024-07-08 14:58:13,647 - INFO - Got list number 2 of 2
+2024-07-08 15:00:35,757 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-07-08 15:00:35,758 - INFO - Entering loop # 1
+2024-07-08 15:00:38,518 - INFO - selected site: 2
+2024-07-08 15:00:40,174 - WARNING - User selected 'y' (emergency situation). Processing only a list for today
+2024-07-08 15:00:41,179 - INFO - Total number of records: 106
+2024-07-08 15:02:05,998 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-07-08 15:02:05,999 - INFO - Entering loop # 1
+2024-07-08 15:02:09,255 - INFO - selected site: 2
+2024-07-08 15:02:10,735 - WARNING - User selected 'y' (emergency situation). Processing only a list for today
+2024-07-08 15:02:11,875 - INFO - Total number of records: 107
+2024-07-08 15:03:04,698 - INFO - Got list number 1 of 2
+2024-07-08 15:03:05,534 - ERROR - Unable to get initial API instance 'payload'
+2024-07-08 15:03:05,538 - INFO - able to find and change the value
+2024-07-08 15:03:05,539 - INFO - successfully wrote in timestamp
+2024-07-08 15:03:05,539 - INFO - sucessfully wrote the new timestamp 2024-07-08 15:03:05.535870
+2024-07-08 15:03:05,540 - INFO - At least the config_timestamp was reset
+2024-07-08 15:03:05,540 - INFO - Program exited safely on its own
+2024-07-08 15:11:12,590 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-07-08 15:11:12,591 - INFO - Entering loop # 1
+2024-07-08 15:11:16,175 - INFO - selected site: 2
+2024-07-08 15:11:17,254 - WARNING - User selected 'y' (emergency situation). Processing only a list for today
+2024-07-08 15:11:19,430 - INFO - Total number of records: 107
+2024-07-08 15:11:20,669 - INFO - Got list number 1 of 2
+2024-07-08 15:13:41,453 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-07-08 15:13:41,453 - INFO - Entering loop # 1
+2024-07-08 15:13:44,230 - INFO - selected site: 2
+2024-07-08 15:13:44,920 - WARNING - User selected 'y' (emergency situation). Processing only a list for today
+2024-07-08 15:13:45,829 - INFO - Total number of records: 112
+2024-07-08 15:13:46,990 - INFO - Got list number 1 of 2
+2024-07-08 15:14:08,486 - INFO - Got list number 2 of 2
+2024-07-08 15:15:30,199 - ERROR - Unable to get initial API instance argument of type 'int' is not iterable
+2024-07-08 15:15:30,202 - INFO - able to find and change the value
+2024-07-08 15:15:30,203 - INFO - successfully wrote in timestamp
+2024-07-08 15:15:30,204 - INFO - sucessfully wrote the new timestamp 2024-07-08 15:15:30.200334
+2024-07-08 15:15:30,205 - INFO - At least the config_timestamp was reset
+2024-07-08 15:15:30,205 - INFO - Program exited safely on its own
+2024-07-08 15:15:52,894 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-07-08 15:15:52,894 - INFO - Entering loop # 1
+2024-07-08 15:15:57,817 - INFO - selected site: 2
+2024-07-08 15:15:59,296 - WARNING - User selected 'y' (emergency situation). Processing only a list for today
+2024-07-08 15:16:31,509 - INFO - Total number of records: 114
+2024-07-08 15:16:32,658 - INFO - Got list number 1 of 2
+2024-07-08 15:16:33,247 - INFO - Got list number 2 of 2
+2024-07-08 15:17:41,623 - ERROR - Unable to get initial API instance argument of type 'int' is not iterable
+2024-07-08 15:17:41,625 - INFO - able to find and change the value
+2024-07-08 15:17:41,627 - INFO - successfully wrote in timestamp
+2024-07-08 15:17:41,627 - INFO - sucessfully wrote the new timestamp 2024-07-08 15:17:41.623626
+2024-07-08 15:17:41,627 - INFO - At least the config_timestamp was reset
+2024-07-08 15:17:41,628 - INFO - Program exited safely on its own
+2024-07-08 15:17:52,395 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-07-08 15:17:52,396 - INFO - Entering loop # 1
+2024-07-08 15:17:55,682 - INFO - selected site: 2
+2024-07-08 15:17:57,674 - WARNING - User selected 'y' (emergency situation). Processing only a list for today
+2024-07-08 15:18:43,141 - INFO - Total number of records: 114
+2024-07-08 15:18:44,262 - INFO - Got list number 1 of 2
+2024-07-08 15:18:44,869 - INFO - Got list number 2 of 2
+2024-07-08 15:21:16,893 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-07-08 15:21:16,893 - INFO - Entering loop # 1
+2024-07-08 15:21:22,691 - INFO - selected site: 2
+2024-07-08 15:21:23,989 - WARNING - User selected 'y' (emergency situation). Processing only a list for today
+2024-07-08 15:21:26,144 - INFO - Total number of records: 114
+2024-07-08 15:21:27,304 - INFO - Got list number 1 of 2
+2024-07-08 15:21:30,897 - INFO - Got list number 2 of 2
+2024-07-08 15:22:24,390 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-07-08 15:22:24,390 - INFO - Entering loop # 1
+2024-07-08 15:22:28,123 - INFO - selected site: 2
+2024-07-08 15:22:29,346 - WARNING - User selected 'y' (emergency situation). Processing only a list for today
+2024-07-08 15:22:30,416 - INFO - Total number of records: 114
+2024-07-08 15:22:32,302 - INFO - Got list number 1 of 2
+2024-07-08 15:22:33,218 - INFO - Got list number 2 of 2
+2024-07-08 15:23:01,837 - ERROR - Unable to get initial API instance module 'time' has no attribute 'now'
+2024-07-08 15:23:01,842 - INFO - able to find and change the value
+2024-07-08 15:23:01,844 - INFO - successfully wrote in timestamp
+2024-07-08 15:23:01,845 - INFO - sucessfully wrote the new timestamp 2024-07-08 15:23:01.839119
+2024-07-08 15:23:01,845 - INFO - At least the config_timestamp was reset
+2024-07-08 15:23:01,845 - INFO - Program exited safely on its own
+2024-07-08 15:28:59,546 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-07-08 15:28:59,546 - INFO - Entering loop # 1
+2024-07-08 15:29:03,803 - INFO - selected site: 2
+2024-07-08 15:29:07,135 - WARNING - User selected 'y' (emergency situation). Processing only a list for today
+2024-07-08 15:29:08,205 - INFO - Total number of records: 114
+2024-07-08 15:29:09,502 - INFO - Got list number 1 of 2
+2024-07-08 15:29:10,333 - INFO - Got list number 2 of 2
+2024-07-08 15:30:45,891 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-07-08 15:30:45,892 - INFO - Entering loop # 1
+2024-07-08 15:30:49,619 - INFO - selected site: 2
+2024-07-08 15:30:50,898 - WARNING - User selected 'y' (emergency situation). Processing only a list for today
+2024-07-08 15:30:51,983 - INFO - Total number of records: 114
+2024-07-08 15:30:53,136 - INFO - Got list number 1 of 2
+2024-07-08 15:30:53,733 - INFO - Got list number 2 of 2
+2024-07-08 15:31:06,927 - ERROR - Unable to get initial API instance module 'time' has no attribute 'now'
+2024-07-08 15:31:06,931 - INFO - able to find and change the value
+2024-07-08 15:31:06,933 - INFO - successfully wrote in timestamp
+2024-07-08 15:31:06,933 - INFO - sucessfully wrote the new timestamp 2024-07-08 15:31:06.928116
+2024-07-08 15:31:06,934 - INFO - At least the config_timestamp was reset
+2024-07-08 15:31:06,935 - INFO - Program exited safely on its own
+2024-07-08 15:41:26,187 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-07-08 15:41:26,188 - INFO - Entering loop # 1
+2024-07-08 15:41:29,874 - INFO - selected site: 4
+2024-07-08 15:41:31,404 - WARNING - User selected 'y' (emergency situation). Processing only a list for today
+2024-07-08 15:41:32,519 - INFO - Total number of records: 124
+2024-07-08 15:41:33,764 - INFO - Got list number 1 of 2
+2024-07-08 15:41:34,556 - INFO - Got list number 2 of 2
+2024-07-08 15:41:52,763 - ERROR - Unable to get initial API instance module 'time' has no attribute 'now'
+2024-07-08 15:41:52,765 - INFO - able to find and change the value
+2024-07-08 15:41:52,766 - INFO - successfully wrote in timestamp
+2024-07-08 15:41:52,767 - INFO - sucessfully wrote the new timestamp 2024-07-08 15:41:52.763958
+2024-07-08 15:41:52,767 - INFO - At least the config_timestamp was reset
+2024-07-08 15:41:52,769 - INFO - Program exited safely on its own
