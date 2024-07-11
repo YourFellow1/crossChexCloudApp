@@ -20,6 +20,19 @@ def begin_of_day(timestamp):
 def end_of_day(timestamp):
     return timestamp.replace(hour=23, minute=59, second=59)
 
+# set timestamp (return) to beginning of month of timestamp (begin of day, too)
+def begin_of_month(timestamp):
+    return begin_of_day(timestamp).replace(day=1)
+
+# Set timestamp to end of month? (ORRRR beginning of next month. minus a day!)
+def end_of_month(timestamp):
+    day_after = timestamp.replace(day=1, month=((timestamp.date().month)+1))
+    day_before = day_after - timedelta(days=1)
+    return day_before
+
+
+    
+
 
 
 class API:
@@ -74,7 +87,24 @@ class API:
         response_json = json.loads(response.text)
         return response_json['payload']['token']
     
-    
+    # datetime.now() beg of month to end of month. set self's times.   
+    def set_to_this_month(self):
+        now = datetime.now()
+        self.begin_time = begin_of_month(begin_of_day(now))
+        self.end_time = end_of_month(end_of_day(now))
+
+
+    # Now -1 month, beg of month to end of month. set self's times.
+    def set_to_last_month(self):
+        now = datetime.now()
+        # self.begin_time = begin_of_month(begin_of_day(now)) - timedelta(months=1) # Bug. can't subtract a month!
+        # #  Now let's look at taking it to the beginning of the month and subtract 1 day, then beginning of month.
+        # # Annoying, but doable. Could also deconstruct the datetime and reconstruct with +1?
+        # self.end_time = end_of_month(begin_of_day(now)) - timedelta(months=1)
+        now = begin_of_month(now)
+        now = now - timedelta(days=1)
+        self.begin_time = begin_of_month(begin_of_day(now))
+        self.end_time = end_of_month(end_of_day(now))
     
     # Single request? to set up for a full request?
     def get_single_request(self):
@@ -98,16 +128,10 @@ class API:
         response = request("POST", self.url, data=payload)
         return json.loads(response.text)
     
-    # Full list of data. We'll work with it after we get the data.
-    # What's our default amount of info that we're pulling?
-    # Whatever we pull, we need to be ready to make it work with our info.
-    
-    def pull_date_range(self, begin, end):
-        # get the num of pages necessary.
-        pass
-    
     
     # Get data for onsite's today.
+    ## Turns out this runs for any of the parameters. Keep this as an option,
+    # with date changes already built in?
     def pull_today(self):
         
         # Create list for info we're grabbing. 
@@ -145,6 +169,33 @@ class API:
             
         return today_list
 
+    # now without the filter, it would be pull_range(self)
+    def pull_range(self):
+        
+        # Create list
+        today_list = []
+        
+        # Dates already updated
+        # get the num of pages necessary.
+        loops = self.set_page_num_total()
+        
+        # change the num of records per page to max 100.
+        self.num_per_page = 100
+        
+        # Loop through and pull the data.
+        while self.page_num <= loops:
+            
+            # Run request, change pageNum for next loop, and append to list.
+            temp_response = self.get_single_request()
+            
+            # log the loop numbers
+            logging.info(f"Got list number {self.page_num} of {loops}")
+        
+            today_list.append(temp_response)
+            
+            self.page_num += 1
+            
+        return today_list
             
         
     

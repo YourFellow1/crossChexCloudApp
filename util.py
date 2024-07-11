@@ -61,7 +61,7 @@ def get_device_by_num(num):
     device_list = []
     for item, value in config_data['Devices'].items():
         if value == str(num):
-            device_list.append(item)
+            device_list.append(item)        
     return device_list
 
 # Loop that can be used for any number input. (Int >0 only)
@@ -69,17 +69,22 @@ def get_num_selection(message, botRange, topRange, number_purpose):
     while True:
         try:
             response = int(input(message))
+            
+            # Evaluates true if not in the range provided. 
             if response > topRange or response < botRange:
                 
                 raise NotInRange
             else:
+                # Log successful selection.
+                logging.info(f"For {number_purpose}: User response is: {response}")
+                
+                # Return.
                 return response
         except ValueError:
             print("Must be a number")
             
         except NotInRange:
             print("Number must be in the range of the prompt")
-
 
 #------------- DEFs from MAIN end --------------------------
 
@@ -131,6 +136,20 @@ Select the site (and select 1 for site data from all sites)'''
     first_line += "\n-------------------------\n"
     return first_line
 
+# To populate the month message (this or past month)
+def month_message(config_values):
+    
+    first_line = '''
+    ------Month Selection-----
+    Which month?'''
+    
+    for item in config_values['Month'].items():
+        tempMessage = f"\n{int(item[0])} : {item[1]}"
+        first_line += tempMessage
+        
+    first_line += "\n--------------------------\n"
+    return first_line
+    
 
 # message for reports (use same structure as site_message)
 def report_message(config_values):
@@ -150,13 +169,9 @@ def report_message(config_values):
     
 #-------------- Config read end -----------------
 
-# Get remaining info for report to be pulled! (pre-API)
-def respond_to_data_type(site_num):
-    #TODO: Big-ol TODO.
-    pass
 
 
-#-------- filter and sort functions -----------
+#-------- filter and sort functions ----------- TODO: REDO AND BE MORE FLEXIBLE.
 
 ## List = [last name, first name, workno, device, timestamp]
 # Well, the filter list is pretty set. Don't need to touch in the refactoring.

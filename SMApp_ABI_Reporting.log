@@ -590,3 +590,242 @@
 2024-07-11 11:26:24,293 - INFO - Got list number 8 of 10
 2024-07-11 11:26:25,189 - INFO - Got list number 9 of 10
 2024-07-11 11:26:25,580 - INFO - Got list number 10 of 10
+2024-07-11 15:41:09,163 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-07-11 15:41:09,164 - INFO - Entering loop # 1
+2024-07-11 15:41:14,391 - INFO - For Which site?: User response is: 2
+2024-07-11 15:41:19,575 - INFO - User selected 'n', and was directed to the main menu
+2024-07-11 15:41:25,927 - INFO - For Checking Data_type: User response is: 2
+2024-07-11 15:42:07,361 - INFO - For This month or last: User response is: 1
+2024-07-11 15:43:03,333 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-07-11 15:43:03,334 - INFO - Entering loop # 1
+2024-07-11 15:43:07,528 - INFO - For Which site?: User response is: 2
+2024-07-11 15:43:09,595 - INFO - User selected 'n', and was directed to the main menu
+2024-07-11 15:43:13,784 - INFO - For Checking Data_type: User response is: 2
+2024-07-11 15:43:15,513 - INFO - For This month or last: User response is: 2
+2024-07-11 15:43:15,514 - CRITICAL - Program closed when it wasn't supposed to. Error: 'months' is an invalid keyword argument for __new__()
+2024-07-11 15:56:23,275 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-07-11 15:56:23,276 - INFO - Entering loop # 1
+2024-07-11 15:56:27,282 - INFO - For Which site?: User response is: 2
+2024-07-11 15:56:28,907 - INFO - User selected 'n', and was directed to the main menu
+2024-07-11 15:56:34,858 - INFO - For Checking Data_type: User response is: 2
+2024-07-11 15:56:37,441 - INFO - For This month or last: User response is: 2
+2024-07-11 16:08:23,996 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-07-11 16:08:23,997 - INFO - Entering loop # 1
+2024-07-11 16:08:26,771 - INFO - For Which site?: User response is: 2
+2024-07-11 16:08:28,602 - INFO - User selected 'n', and was directed to the main menu
+2024-07-11 16:08:40,267 - INFO - For Checking Data_type: User response is: 2
+2024-07-11 16:08:42,323 - INFO - For This month or last: User response is: 2
+2024-07-11 16:08:42,896 - INFO - Total number of records: 2856
+2024-07-11 16:08:43,515 - INFO - Got list number 1 of 29
+2024-07-11 16:08:43,986 - INFO - Got list number 1 of 29
+2024-07-11 16:08:44,706 - INFO - Got list number 1 of 29
+2024-07-11 16:08:45,424 - INFO - Got list number 1 of 29
+2024-07-11 16:08:46,295 - INFO - Got list number 1 of 29
+2024-07-11 16:08:47,010 - INFO - Got list number 1 of 29
+2024-07-11 16:08:47,654 - INFO - Got list number 1 of 29
+2024-07-11 16:08:48,565 - INFO - Got list number 1 of 29
+2024-07-11 16:08:49,236 - INFO - Got list number 1 of 29
+2024-07-11 16:08:49,876 - INFO - Got list number 1 of 29
+2024-07-11 16:08:50,474 - INFO - Got list number 1 of 29
+2024-07-11 16:08:51,018 - INFO - Got list number 1 of 29
+2024-07-11 16:08:51,578 - INFO - Got list number 1 of 29
+2024-07-11 16:08:52,332 - INFO - Got list number 1 of 29
+2024-07-11 16:08:52,902 - INFO - Got list number 1 of 29
+2024-07-11 16:08:53,487 - INFO - Got list number 1 of 29
+2024-07-11 16:08:54,135 - INFO - Got list number 1 of 29
+2024-07-11 16:08:54,686 - INFO - Got list number 1 of 29
+2024-07-11 16:08:55,388 - INFO - Got list number 1 of 29
+2024-07-11 16:08:56,139 - INFO - Got list number 1 of 29
+2024-07-11 16:08:56,930 - INFO - Got list number 1 of 29
+2024-07-11 16:08:57,516 - INFO - Got list number 1 of 29
+2024-07-11 16:08:58,099 - INFO - Got list number 1 of 29
+2024-07-11 16:08:58,662 - INFO - Got list number 1 of 29
+2024-07-11 16:08:59,278 - INFO - Got list number 1 of 29
+2024-07-11 16:09:00,237 - INFO - Got list number 1 of 29
+2024-07-11 16:09:00,867 - INFO - Got list number 1 of 29
+2024-07-11 16:09:01,473 - INFO - Got list number 1 of 29
+2024-07-11 16:09:02,407 - INFO - Got list number 1 of 29
+2024-07-11 16:09:03,206 - INFO - Got list number 1 of 29
+2024-07-11 16:09:03,850 - INFO - Got list number 1 of 29
+2024-07-11 16:09:04,433 - INFO - Got list number 1 of 29
+2024-07-11 16:09:05,429 - INFO - Got list number 1 of 29
+2024-07-11 16:09:06,021 - INFO - Got list number 1 of 29
+2024-07-11 16:09:06,650 - INFO - Got list number 1 of 29
+2024-07-11 16:09:07,365 - INFO - Got list number 1 of 29
+2024-07-11 16:09:07,970 - INFO - Got list number 1 of 29
+2024-07-11 16:09:08,544 - INFO - Got list number 1 of 29
+2024-07-11 16:09:09,275 - INFO - Got list number 1 of 29
+2024-07-11 16:09:09,828 - INFO - Got list number 1 of 29
+2024-07-11 16:09:10,415 - INFO - Got list number 1 of 29
+2024-07-11 16:09:11,000 - INFO - Got list number 1 of 29
+2024-07-11 16:09:11,540 - INFO - Got list number 1 of 29
+2024-07-11 16:09:12,182 - INFO - Got list number 1 of 29
+2024-07-11 16:09:12,747 - INFO - Got list number 1 of 29
+2024-07-11 16:09:13,362 - INFO - Got list number 1 of 29
+2024-07-11 16:09:13,910 - INFO - Got list number 1 of 29
+2024-07-11 16:09:14,546 - INFO - Got list number 1 of 29
+2024-07-11 16:09:15,304 - INFO - Got list number 1 of 29
+2024-07-11 16:09:15,861 - INFO - Got list number 1 of 29
+2024-07-11 16:09:16,488 - INFO - Got list number 1 of 29
+2024-07-11 16:09:17,096 - INFO - Got list number 1 of 29
+2024-07-11 16:09:17,865 - INFO - Got list number 1 of 29
+2024-07-11 16:09:18,435 - INFO - Got list number 1 of 29
+2024-07-11 16:09:19,294 - INFO - Got list number 1 of 29
+2024-07-11 16:09:19,860 - INFO - Got list number 1 of 29
+2024-07-11 16:09:20,589 - INFO - Got list number 1 of 29
+2024-07-11 16:09:21,230 - INFO - Got list number 1 of 29
+2024-07-11 16:09:21,815 - INFO - Got list number 1 of 29
+2024-07-11 16:09:22,465 - INFO - Got list number 1 of 29
+2024-07-11 16:09:23,045 - INFO - Got list number 1 of 29
+2024-07-11 16:09:23,740 - INFO - Got list number 1 of 29
+2024-07-11 16:09:24,366 - INFO - Got list number 1 of 29
+2024-07-11 16:09:24,917 - INFO - Got list number 1 of 29
+2024-07-11 16:09:25,544 - INFO - Got list number 1 of 29
+2024-07-11 16:09:26,173 - INFO - Got list number 1 of 29
+2024-07-11 16:09:26,832 - INFO - Got list number 1 of 29
+2024-07-11 16:09:27,436 - INFO - Got list number 1 of 29
+2024-07-11 16:09:28,139 - INFO - Got list number 1 of 29
+2024-07-11 16:09:28,694 - INFO - Got list number 1 of 29
+2024-07-11 16:09:29,310 - INFO - Got list number 1 of 29
+2024-07-11 16:09:29,853 - INFO - Got list number 1 of 29
+2024-07-11 16:09:30,475 - INFO - Got list number 1 of 29
+2024-07-11 16:09:31,123 - INFO - Got list number 1 of 29
+2024-07-11 16:09:31,712 - INFO - Got list number 1 of 29
+2024-07-11 16:09:32,380 - INFO - Got list number 1 of 29
+2024-07-11 16:09:33,544 - INFO - Selected to close via ctrl + c
+2024-07-11 16:09:33,547 - INFO - Got list number 1 of 29
+2024-07-11 16:09:34,395 - INFO - Got list number 1 of 29
+2024-07-11 16:09:35,039 - INFO - Got list number 1 of 29
+2024-07-11 16:09:35,609 - INFO - Got list number 1 of 29
+2024-07-11 16:09:36,300 - INFO - Got list number 1 of 29
+2024-07-11 16:09:36,859 - INFO - Got list number 1 of 29
+2024-07-11 16:09:37,423 - INFO - Got list number 1 of 29
+2024-07-11 16:09:37,989 - INFO - Got list number 1 of 29
+2024-07-11 16:09:38,586 - INFO - Got list number 1 of 29
+2024-07-11 16:09:38,670 - INFO - Selected to close via ctrl + c
+2024-07-11 16:09:39,373 - INFO - Selected to close via ctrl + c
+2024-07-11 16:09:39,381 - INFO - Got list number 1 of 29
+2024-07-11 16:09:39,926 - INFO - Got list number 1 of 29
+2024-07-11 16:09:40,509 - INFO - Got list number 1 of 29
+2024-07-11 16:09:41,132 - INFO - Got list number 1 of 29
+2024-07-11 16:09:41,688 - INFO - Got list number 1 of 29
+2024-07-11 16:09:42,340 - INFO - Got list number 1 of 29
+2024-07-11 16:12:51,482 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-07-11 16:12:51,483 - INFO - Entering loop # 1
+2024-07-11 16:12:56,751 - INFO - For Which site?: User response is: 2
+2024-07-11 16:12:58,449 - INFO - User selected 'n', and was directed to the main menu
+2024-07-11 16:13:00,935 - INFO - For Checking Data_type: User response is: 2
+2024-07-11 16:13:02,448 - INFO - For This month or last: User response is: 2
+2024-07-11 16:13:02,870 - INFO - Total number of records: 2856
+2024-07-11 16:13:03,855 - INFO - Got list number 1 of 29
+2024-07-11 16:13:04,494 - INFO - Got list number 2 of 29
+2024-07-11 16:13:05,387 - INFO - Got list number 3 of 29
+2024-07-11 16:13:06,169 - INFO - Got list number 4 of 29
+2024-07-11 16:13:06,917 - INFO - Got list number 5 of 29
+2024-07-11 16:13:07,601 - INFO - Got list number 6 of 29
+2024-07-11 16:13:08,324 - INFO - Got list number 7 of 29
+2024-07-11 16:13:09,007 - INFO - Got list number 8 of 29
+2024-07-11 16:13:09,760 - INFO - Got list number 9 of 29
+2024-07-11 16:13:10,553 - INFO - Got list number 10 of 29
+2024-07-11 16:13:11,340 - INFO - Got list number 11 of 29
+2024-07-11 16:13:12,032 - INFO - Got list number 12 of 29
+2024-07-11 16:13:12,633 - INFO - Got list number 13 of 29
+2024-07-11 16:13:13,378 - INFO - Got list number 14 of 29
+2024-07-11 16:13:14,027 - INFO - Got list number 15 of 29
+2024-07-11 16:13:14,872 - INFO - Got list number 16 of 29
+2024-07-11 16:13:15,580 - INFO - Got list number 17 of 29
+2024-07-11 16:13:16,273 - INFO - Got list number 18 of 29
+2024-07-11 16:13:16,938 - INFO - Got list number 19 of 29
+2024-07-11 16:13:17,873 - INFO - Got list number 20 of 29
+2024-07-11 16:13:18,705 - INFO - Got list number 21 of 29
+2024-07-11 16:13:19,608 - INFO - Got list number 22 of 29
+2024-07-11 16:13:20,612 - INFO - Got list number 23 of 29
+2024-07-11 16:13:21,637 - INFO - Got list number 24 of 29
+2024-07-11 16:13:22,669 - INFO - Got list number 25 of 29
+2024-07-11 16:13:23,721 - INFO - Got list number 26 of 29
+2024-07-11 16:13:24,660 - INFO - Got list number 27 of 29
+2024-07-11 16:13:25,528 - INFO - Got list number 28 of 29
+2024-07-11 16:13:26,272 - INFO - Got list number 29 of 29
+2024-07-11 16:13:26,275 - INFO - able to find and change the value
+2024-07-11 16:13:26,276 - INFO - successfully wrote in timestamp
+2024-07-11 16:13:26,277 - INFO - sucessfully wrote the new timestamp 2024-07-11 16:13:26.273778
+2024-07-11 16:13:26,277 - CRITICAL - Program closed when it wasn't supposed to. Error: local variable 'test_pickle_path' referenced before assignment
+2024-07-11 16:15:45,583 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-07-11 16:15:45,584 - INFO - Entering loop # 1
+2024-07-11 16:15:49,666 - INFO - For Which site?: User response is: 2
+2024-07-11 16:15:51,350 - INFO - User selected 'n', and was directed to the main menu
+2024-07-11 16:15:53,082 - INFO - For Checking Data_type: User response is: 2
+2024-07-11 16:15:54,090 - INFO - For This month or last: User response is: 2
+2024-07-11 16:15:54,412 - INFO - Total number of records: 2856
+2024-07-11 16:15:54,990 - INFO - Got list number 1 of 29
+2024-07-11 16:15:55,613 - INFO - Got list number 2 of 29
+2024-07-11 16:15:56,428 - INFO - Got list number 3 of 29
+2024-07-11 16:15:57,146 - INFO - Got list number 4 of 29
+2024-07-11 16:15:57,829 - INFO - Got list number 5 of 29
+2024-07-11 16:15:58,561 - INFO - Got list number 6 of 29
+2024-07-11 16:15:59,331 - INFO - Got list number 7 of 29
+2024-07-11 16:16:00,030 - INFO - Got list number 8 of 29
+2024-07-11 16:16:00,844 - INFO - Got list number 9 of 29
+2024-07-11 16:16:01,877 - INFO - Got list number 10 of 29
+2024-07-11 16:16:02,905 - INFO - Got list number 11 of 29
+2024-07-11 16:16:03,645 - INFO - Got list number 12 of 29
+2024-07-11 16:16:04,449 - INFO - Got list number 13 of 29
+2024-07-11 16:16:05,134 - INFO - Got list number 14 of 29
+2024-07-11 16:16:05,805 - INFO - Got list number 15 of 29
+2024-07-11 16:16:06,540 - INFO - Got list number 16 of 29
+2024-07-11 16:16:07,243 - INFO - Got list number 17 of 29
+2024-07-11 16:16:07,908 - INFO - Got list number 18 of 29
+2024-07-11 16:16:08,560 - INFO - Got list number 19 of 29
+2024-07-11 16:16:09,633 - INFO - Got list number 20 of 29
+2024-07-11 16:16:10,589 - INFO - Got list number 21 of 29
+2024-07-11 16:16:11,472 - INFO - Got list number 22 of 29
+2024-07-11 16:16:12,379 - INFO - Got list number 23 of 29
+2024-07-11 16:16:13,432 - INFO - Got list number 24 of 29
+2024-07-11 16:16:14,560 - INFO - Got list number 25 of 29
+2024-07-11 16:16:16,020 - INFO - Got list number 26 of 29
+2024-07-11 16:16:17,144 - INFO - Got list number 27 of 29
+2024-07-11 16:16:18,075 - INFO - Got list number 28 of 29
+2024-07-11 16:16:18,720 - INFO - Got list number 29 of 29
+2024-07-11 16:16:18,722 - INFO - able to find and change the value
+2024-07-11 16:16:18,723 - INFO - successfully wrote in timestamp
+2024-07-11 16:16:18,723 - INFO - sucessfully wrote the new timestamp 2024-07-11 16:16:18.720047
+2024-07-11 16:16:18,724 - CRITICAL - Program closed when it wasn't supposed to. Error: local variable 'new_list' referenced before assignment
+2024-07-11 16:16:54,716 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-07-11 16:16:54,717 - INFO - Entering loop # 1
+2024-07-11 16:16:58,675 - INFO - For Which site?: User response is: 2
+2024-07-11 16:17:00,524 - INFO - User selected 'n', and was directed to the main menu
+2024-07-11 16:17:25,819 - INFO - For Checking Data_type: User response is: 2
+2024-07-11 16:17:26,876 - INFO - For This month or last: User response is: 2
+2024-07-11 16:17:27,238 - INFO - Total number of records: 2856
+2024-07-11 16:17:27,879 - INFO - Got list number 1 of 29
+2024-07-11 16:17:28,520 - INFO - Got list number 2 of 29
+2024-07-11 16:17:29,477 - INFO - Got list number 3 of 29
+2024-07-11 16:17:30,288 - INFO - Got list number 4 of 29
+2024-07-11 16:17:31,007 - INFO - Got list number 5 of 29
+2024-07-11 16:17:31,724 - INFO - Got list number 6 of 29
+2024-07-11 16:17:32,452 - INFO - Got list number 7 of 29
+2024-07-11 16:17:33,293 - INFO - Got list number 8 of 29
+2024-07-11 16:17:34,020 - INFO - Got list number 9 of 29
+2024-07-11 16:17:34,717 - INFO - Got list number 10 of 29
+2024-07-11 16:17:35,436 - INFO - Got list number 11 of 29
+2024-07-11 16:17:36,428 - INFO - Got list number 12 of 29
+2024-07-11 16:17:37,197 - INFO - Got list number 13 of 29
+2024-07-11 16:17:37,923 - INFO - Got list number 14 of 29
+2024-07-11 16:17:38,636 - INFO - Got list number 15 of 29
+2024-07-11 16:17:39,508 - INFO - Got list number 16 of 29
+2024-07-11 16:17:40,261 - INFO - Got list number 17 of 29
+2024-07-11 16:17:40,894 - INFO - Got list number 18 of 29
+2024-07-11 16:17:41,564 - INFO - Got list number 19 of 29
+2024-07-11 16:17:42,583 - INFO - Got list number 20 of 29
+2024-07-11 16:17:43,647 - INFO - Got list number 21 of 29
+2024-07-11 16:17:44,551 - INFO - Got list number 22 of 29
+2024-07-11 16:17:45,567 - INFO - Got list number 23 of 29
+2024-07-11 16:17:46,622 - INFO - Got list number 24 of 29
+2024-07-11 16:17:47,714 - INFO - Got list number 25 of 29
+2024-07-11 16:17:48,868 - INFO - Got list number 26 of 29
+2024-07-11 16:17:49,983 - INFO - Got list number 27 of 29
+2024-07-11 16:17:50,931 - INFO - Got list number 28 of 29
+2024-07-11 16:17:51,731 - INFO - Got list number 29 of 29
+2024-07-11 16:17:51,734 - INFO - able to find and change the value
+2024-07-11 16:17:51,735 - INFO - successfully wrote in timestamp
+2024-07-11 16:17:51,735 - INFO - sucessfully wrote the new timestamp 2024-07-11 16:17:51.732122
