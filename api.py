@@ -102,7 +102,7 @@ class API:
     # What's our default amount of info that we're pulling?
     # Whatever we pull, we need to be ready to make it work with our info.
     
-    def pull_last_month(self, begin, end):
+    def pull_date_range(self, begin, end):
         # get the num of pages necessary.
         pass
     
@@ -133,6 +133,9 @@ class API:
             # Filter the response info as we need it (same as before)
             ### Debug learned - must add to today_list one at a time, or we
             ## have one giant list per 100!
+            #TODO: for the sake of pickle usage, can we use an unfiltered list?
+            # I need to do better about working with the raw data.
+            
             temp_list = util.filter_list(temp_response)
             for list in temp_list:
                 today_list.append(list)

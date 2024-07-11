@@ -564,3 +564,29 @@
 2024-07-08 15:41:52,767 - INFO - sucessfully wrote the new timestamp 2024-07-08 15:41:52.763958
 2024-07-08 15:41:52,767 - INFO - At least the config_timestamp was reset
 2024-07-08 15:41:52,769 - INFO - Program exited safely on its own
+2024-07-11 11:16:25,279 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-07-11 11:16:25,280 - INFO - Entering loop # 1
+2024-07-11 11:16:31,120 - INFO - selected site: 2
+2024-07-11 11:16:33,717 - INFO - User selected 'n', and was directed to the main menu
+2024-07-11 11:16:33,718 - CRITICAL - Program closed when it wasn't supposed to. Error: local variable 'report_message' referenced before assignment
+2024-07-11 11:18:06,062 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-07-11 11:18:06,062 - INFO - Entering loop # 1
+2024-07-11 11:18:09,493 - INFO - selected site: 2
+2024-07-11 11:18:10,485 - INFO - User selected 'n', and was directed to the main menu
+2024-07-11 11:18:10,486 - CRITICAL - Program closed when it wasn't supposed to. Error: get_num_selection() missing 3 required positional arguments: 'botRange', 'topRange', and 'number_purpose'
+2024-07-11 11:25:59,039 - INFO - file/directory: 'historical csv files' was found, moving on.
+2024-07-11 11:25:59,040 - INFO - Entering loop # 1
+2024-07-11 11:26:04,574 - INFO - selected site: 2
+2024-07-11 11:26:06,391 - INFO - User selected 'n', and was directed to the main menu
+2024-07-11 11:26:17,006 - INFO - User selected data type: 3
+2024-07-11 11:26:17,845 - INFO - Total number of records: 911
+2024-07-11 11:26:18,572 - INFO - Got list number 1 of 10
+2024-07-11 11:26:19,158 - INFO - Got list number 2 of 10
+2024-07-11 11:26:20,136 - INFO - Got list number 3 of 10
+2024-07-11 11:26:20,868 - INFO - Got list number 4 of 10
+2024-07-11 11:26:21,707 - INFO - Got list number 5 of 10
+2024-07-11 11:26:22,635 - INFO - Got list number 6 of 10
+2024-07-11 11:26:23,514 - INFO - Got list number 7 of 10
+2024-07-11 11:26:24,293 - INFO - Got list number 8 of 10
+2024-07-11 11:26:25,189 - INFO - Got list number 9 of 10
+2024-07-11 11:26:25,580 - INFO - Got list number 10 of 10

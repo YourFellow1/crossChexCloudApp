@@ -80,10 +80,6 @@ def get_num_selection(message, botRange, topRange, number_purpose):
         except NotInRange:
             print("Number must be in the range of the prompt")
 
-def get_site_devices(num, config_data):
-    #TODO: need to create a list of devices.
-
-        pass
 
 #------------- DEFs from MAIN end --------------------------
 
@@ -200,14 +196,43 @@ def who_onsite(in_list, site):
     # need to see if people are clocked in or not
     # Separate all-purpose clock-in/out scenario?
     
-    onsite_today = clock_in(in_list, emergency=True, site=site)
+    clock_in_list = clock_in(in_list, emergency=True, site=site)
+    
+
     pass
 
-
+def filter_by_site(list, site):
+    devices = get_device_by_num(site)
+    
+    # By devices passed through in "site"
+    device_sorted_list = []
+    for list in list:
+        if list[3].lower() in devices:
+            device_sorted_list.append(list)
+    
+    return device_sorted_list
+    
+    pass
 
 # Run through a raw list and see who is clocked-in.
 # when working with EOD, emergency will be false.
 def clock_in(raw_list, emergency, site):
+    
+    # Restart class
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     #Raw list starts with: [last name, first name, workno, device, timestamp]
     # Assumptions:
     # anything in less than [# (20?)] seconds isn't a separate badge-out.
@@ -218,15 +243,8 @@ def clock_in(raw_list, emergency, site):
     # Sort by workno.
     sorted_list = sorted(raw_list, key=lambda x: x[2]) # COOL. THIS IS HOW YOU SORT BY NOT FIRST INDEX!
 
-    # get a tuple or more of site device name(s).
-    devices = get_device_by_num(site)
+    device_sorted_list = filter_by_site(sorted_list, site)
     
-    # By devices passed through in "site"
-    device_sorted_list = []
-    for list in sorted_list:
-        if list[3].lower() in devices:
-            device_sorted_list.append(list)
-    print(f"device_sorted_list: {device_sorted_list}")
     ## Go through each, and append(status).
     in_out_list = []
     last_employee = ''

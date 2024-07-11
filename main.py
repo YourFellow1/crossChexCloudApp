@@ -16,6 +16,9 @@ from api import API, begin_of_day, end_of_day
 import times
 from logger_config import logger as logging
 import sys
+from datetime import datetime, date, timedelta
+import csv
+import pickle
 
 
 
@@ -150,12 +153,61 @@ def main():
             if not emergency:
                 
                 # Which report is the user wanting?
-                report_message = report_message(site_config)
-                data_type = util.get_num_selection(report_message)
+                report_message = util.report_message(site_config)
+                data_type = util.get_num_selection(report_message, 1, len(site_config['Report']), 'because')
                 logging.info(f"User selected data type: {data_type}")
 
                 # Respond to the report request. ie, get all remaining info.
+                # EOD:
                 
+                # Month : Need to pull data? or hours? or both?
+                
+                # Date Range:
+                
+                try:
+                    # Instance of API
+                    new_api = API()
+
+                    # Based on data_type TODO: What info changes on API?
+                    # for pickle, let's just pull a week's worth to work with.
+                    new_api.begin_time = api.begin_of_day(datetime.now() - timedelta(days=7))
+                    new_api.end_time = api.end_of_day(datetime.now())
+
+                    
+                    # Pull today's (based on default)
+                    new_list = new_api.pull_today()
+                    
+                    test_csv_path = 'C:\\Users\\jfellow\\OneDrive - Bastian Solutions\\TestCode\\Python\\crossChex_App\\csv\\test_data.csv'
+                    test_pickle_path = 'C:\\Users\\jfellow\\OneDrive - Bastian Solutions\\TestCode\\Python\\crossChex_App\\csv\\test_data.pkl'
+                    
+                    
+                    with open(test_csv_path, "w", newline='') as csvfile:
+                        writer = csv.writer(csvfile)
+                        for row in new_list:
+                            writer.writerow(row)
+                    print(f"CSV file saved to {test_csv_path}")
+                    
+                    with open(test_pickle_path, 'wb') as file:
+                        pickle.dump(new_list, file)
+                            
+                    # Cool. now we have the list for a day.
+                    # Pass it through and create a function for who's onsite.
+                    # Now sort, and evaluate the data.
+                    onsite_list = util.who_onsite(new_list, site)
+                    print(f"List of onsite personnel = {onsite_list}")
+
+
+                    # for now, exit the program.
+                    raise SystemExit
+                        # Filter list by devices
+                        # Export a list of poeple (all badge-ins)
+                        # export the list of who's clocked in.
+                        # Exit program.
+                except Exception as e:
+                    logging.error(f"Unable to get initial API instance {e}")
+                    times.set_config_timestamp()
+                    logging.info("At least the config_timestamp was reset")
+                    raise SystemExit
                 
 
             # Is a data pull necessary?
